@@ -1,0 +1,29 @@
+#!/usr/bin/env python
+# Сборка ядра. Компилятор — MinGW-w64 (WinLibs GCC 16.2 в C:\Tools\winlibs), см. tools/build_native.ps1.
+#
+#   scons platform=windows target=template_debug use_mingw=yes            → game/bin/spacecore.*.dll (GDExtension)
+#   scons platform=windows target=template_debug use_mingw=yes tests=yes  → ещё native/bin/spacecore_tests.exe
+#                                                                            и native/bin/spacecore_c.dll (для pytest)
+import os
+
+env = SConscript("thirdparty/godot-cpp/SConstruct")
+
+# Без слияния умножения и сложения (FMA): иначе полиномы Чебышёва разойдутся со SPICE в последних битах.
+FP_FLAGS = ["-ffp-contract=off"]
+
+genv = env.Clone()
+genv.Append(CPPPATH=["src/"], CCFLAGS=FP_FLAGS)
+core_g = [genv.SharedObject("build/godot/core/" + os.path.basename(str(f))[:-4], f) for f in Glob("src/core/*.cpp")]
+bind_g = [genv.SharedObject("build/godot/bind/" + os.path.basename(str(f))[:-4], f) for f in Glob("src/godot/*.cpp")]
+lib = genv.SharedLibrary("../game/bin/spacecore{}{}".format(genv["suffix"], genv["SHLIBSUFFIX"]), core_g + bind_g)
+Default(lib)
+
+if ARGUMENTS.get("tests", "no") in ("yes", "1", "true"):
+    tenv = Environment(tools=["mingw"], ENV=dict(os.environ))  # нужны PATH и TEMP
+    tenv.Append(CPPPATH=["src/", "thirdparty/doctest"],
+                CXXFLAGS=["-std=c++17", "-O2", "-Wall", "-Wextra"] + FP_FLAGS,
+                LINKFLAGS=["-static", "-static-libgcc", "-static-libstdc++"])
+    core_t = [tenv.SharedObject("build/plain/core/" + os.path.basename(str(f))[:-4], f) for f in Glob("src/core/*.cpp")]
+    tests = tenv.Program("bin/spacecore_tests", core_t + Glob("tests/*.cpp"))
+    capi = tenv.SharedLibrary("bin/spacecore_c", core_t + ["src/capi/spacecore_c.cpp"])
+    Default(tests, capi)

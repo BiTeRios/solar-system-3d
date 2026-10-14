@@ -1,0 +1,2327 @@
+{
+ "created_utc": "2026-10-13T14:28:41Z",
+ "note": "значение = {v, src}; src — ключ в sources.json",
+ "bodies": [
+  {
+   "key": "sun",
+   "naif": 10,
+   "name": "Солнце",
+   "name_en": "Sun",
+   "parent": null,
+   "kind": "star",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 132712440041.27939,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     695700.0,
+     695700.0,
+     695700.0
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "mass_1e24kg": {
+     "v": 1988400.0,
+     "raw": "Mass (1024 kg): 1,988,400.",
+     "src": "nasa_fact_sun"
+    },
+    "radius_mean_km": {
+     "v": 695700.0,
+     "raw": "Volumetric mean radius (km): 695,700.",
+     "src": "nasa_fact_sun"
+    },
+    "density_kgm3": {
+     "v": 1408.0,
+     "raw": "Mean density (kg/m3): 1408.",
+     "src": "nasa_fact_sun"
+    },
+    "rotation_h": {
+     "v": 609.12,
+     "raw": "Sidereal rotation period (hrs)*: 609.12",
+     "src": "nasa_fact_sun"
+    },
+    "obliquity_deg": {
+     "v": 7.25,
+     "raw": "Obliquity to ecliptic (deg.): 7.25",
+     "src": "nasa_fact_sun"
+    },
+    "mean_temp_K": {
+     "raw": "Effective temperature: 5772 K",
+     "v": 5772.0,
+     "src": "nasa_fact_sun"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 10
+   }
+  },
+  {
+   "key": "mercury",
+   "naif": 199,
+   "name": "Меркурий",
+   "name_en": "Mercury",
+   "parent": "sun",
+   "kind": "planet",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 22031.868551400003,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     2440.53,
+     2440.53,
+     2438.26
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "mass_1e24kg": {
+     "v": 0.3301,
+     "raw": "Mass (1024 kg): 0.33010",
+     "src": "nasa_fact_mercury"
+    },
+    "radius_mean_km": {
+     "v": 2439.7,
+     "raw": "Volumetric mean radius (km): 2439.7",
+     "src": "nasa_fact_mercury"
+    },
+    "density_kgm3": {
+     "v": 5429.0,
+     "raw": "Mean density (kg/m3): 5429",
+     "src": "nasa_fact_mercury"
+    },
+    "bond_albedo": {
+     "v": 0.068,
+     "raw": "Bond albedo: 0.068",
+     "src": "nasa_fact_mercury"
+    },
+    "geometric_albedo": {
+     "v": 0.142,
+     "raw": "Geometric albedo: 0.142",
+     "src": "nasa_fact_mercury"
+    },
+    "blackbody_K": {
+     "v": 439.6,
+     "raw": "Black-body temperature (K): 439.6",
+     "src": "nasa_fact_mercury"
+    },
+    "j2_1e6": {
+     "v": 50.3,
+     "raw": "J2 (x 10-6): 50.3",
+     "src": "nasa_fact_mercury"
+    },
+    "rotation_h": {
+     "v": 1407.6,
+     "raw": "Sidereal rotation period (hrs): 1407.6",
+     "src": "nasa_fact_mercury"
+    },
+    "obliquity_deg": {
+     "v": 0.034,
+     "raw": "Obliquity to orbit (deg): 0.034",
+     "src": "nasa_fact_mercury"
+    },
+    "mean_temp_K": {
+     "raw": "Average temperature: 440 K (167 C) (590-725 K, sunward side)",
+     "v": 440.0,
+     "src": "nasa_fact_mercury"
+    },
+    "surface_pressure_bar": {
+     "raw": "Surface pressure: <~5 x 10-15 bar (0.005 picobar)",
+     "v": 5.000000000000001e-15,
+     "upper_limit": true,
+     "src": "nasa_fact_mercury"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 199
+   }
+  },
+  {
+   "key": "venus",
+   "naif": 299,
+   "name": "Венера",
+   "name_en": "Venus",
+   "parent": "sun",
+   "kind": "planet",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 324858.592,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     6051.8,
+     6051.8,
+     6051.8
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "mass_1e24kg": {
+     "v": 4.8673,
+     "raw": "Mass (1024 kg): 4.8673",
+     "src": "nasa_fact_venus"
+    },
+    "radius_mean_km": {
+     "v": 6051.8,
+     "raw": "Volumetric mean radius (km): 6051.8",
+     "src": "nasa_fact_venus"
+    },
+    "density_kgm3": {
+     "v": 5243.0,
+     "raw": "Mean density (kg/m3): 5243",
+     "src": "nasa_fact_venus"
+    },
+    "bond_albedo": {
+     "v": 0.77,
+     "raw": "Bond albedo: 0.77",
+     "src": "nasa_fact_venus"
+    },
+    "geometric_albedo": {
+     "v": 0.689,
+     "raw": "Geometric albedo: 0.689",
+     "src": "nasa_fact_venus"
+    },
+    "blackbody_K": {
+     "v": 226.6,
+     "raw": "Black-body temperature (K): 226.6",
+     "src": "nasa_fact_venus"
+    },
+    "j2_1e6": {
+     "v": 4.458,
+     "raw": "J2 (x 10-6): 4.458",
+     "src": "nasa_fact_venus"
+    },
+    "rotation_h": {
+     "v": -5832.6,
+     "raw": "Sidereal rotation period (hrs): -5832.6",
+     "src": "nasa_fact_venus"
+    },
+    "obliquity_deg": {
+     "v": 177.36,
+     "raw": "Obliquity to orbit (deg): 177.36",
+     "src": "nasa_fact_venus"
+    },
+    "mean_temp_K": {
+     "raw": "Average temperature: 737 K (464 C)",
+     "v": 737.0,
+     "src": "nasa_fact_venus"
+    },
+    "scale_height_km": {
+     "raw": "Scale height: 15.9 km",
+     "v": 15.9,
+     "src": "nasa_fact_venus"
+    },
+    "mean_molecular_weight": {
+     "raw": "Mean molecular weight: 43.45",
+     "v": 43.45,
+     "src": "nasa_fact_venus"
+    },
+    "surface_pressure_bar": {
+     "raw": "Surface pressure: 92 bars",
+     "v": 92.0,
+     "src": "nasa_fact_venus"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 299
+   }
+  },
+  {
+   "key": "earth",
+   "naif": 399,
+   "name": "Земля",
+   "name_en": "Earth",
+   "parent": "sun",
+   "kind": "planet",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 398600.4355070226,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     6378.1366,
+     6378.1366,
+     6356.7519
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "mass_1e24kg": {
+     "v": 5.9722,
+     "raw": "Mass (1024 kg) 5.9722",
+     "src": "nasa_fact_earth"
+    },
+    "radius_mean_km": {
+     "v": 6371.0,
+     "raw": "Volumetric mean radius (km) 6371.000",
+     "src": "nasa_fact_earth"
+    },
+    "density_kgm3": {
+     "v": 5513.0,
+     "raw": "Mean density (kg/m3) 5513",
+     "src": "nasa_fact_earth"
+    },
+    "bond_albedo": {
+     "v": 0.294,
+     "raw": "Bond albedo 0.294",
+     "src": "nasa_fact_earth"
+    },
+    "geometric_albedo": {
+     "v": 0.434,
+     "raw": "Geometric albedo 0.434",
+     "src": "nasa_fact_earth"
+    },
+    "blackbody_K": {
+     "v": 254.0,
+     "raw": "Black-body temperature (K) 254.0",
+     "src": "nasa_fact_earth"
+    },
+    "j2_1e6": {
+     "v": 1082.63,
+     "raw": "J2 (x 10-6) 1082.63",
+     "src": "nasa_fact_earth"
+    },
+    "rotation_h": {
+     "v": 23.9345,
+     "raw": "Sidereal rotation period (hrs) 23.9345",
+     "src": "nasa_fact_earth"
+    },
+    "obliquity_deg": {
+     "v": 23.44,
+     "raw": "Obliquity to orbit (deg) 23.44",
+     "src": "nasa_fact_earth"
+    },
+    "mean_temp_K": {
+     "raw": "Average temperature: 288 K (15 C)",
+     "v": 288.0,
+     "src": "nasa_fact_earth"
+    },
+    "scale_height_km": {
+     "raw": "Scale height: 8.5 km",
+     "v": 8.5,
+     "src": "nasa_fact_earth"
+    },
+    "mean_molecular_weight": {
+     "raw": "Mean molecular weight: 28.97",
+     "v": 28.97,
+     "src": "nasa_fact_earth"
+    },
+    "surface_pressure_bar": {
+     "raw": "Surface pressure: 1014 mb",
+     "v": 1.014,
+     "src": "nasa_fact_earth"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 399
+   }
+  },
+  {
+   "key": "moon",
+   "naif": 301,
+   "name": "Луна",
+   "name_en": "Moon",
+   "parent": "earth",
+   "kind": "moon",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 4902.800118457549,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     1737.4,
+     1737.4,
+     1737.4
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "mass_1e24kg": {
+     "v": 0.07346,
+     "raw": "Mass (1024 kg): 0.07346",
+     "src": "nasa_fact_moon"
+    },
+    "radius_mean_km": {
+     "v": 1737.4,
+     "raw": "Volumetric mean radius (km): 1737.4",
+     "src": "nasa_fact_moon"
+    },
+    "density_kgm3": {
+     "v": 3344.0,
+     "raw": "Mean density (kg/m3): 3344",
+     "src": "nasa_fact_moon"
+    },
+    "bond_albedo": {
+     "v": 0.11,
+     "raw": "Bond albedo: 0.11",
+     "src": "nasa_fact_moon"
+    },
+    "geometric_albedo": {
+     "v": 0.12,
+     "raw": "Geometric albedo: 0.12",
+     "src": "nasa_fact_moon"
+    },
+    "blackbody_K": {
+     "v": 270.4,
+     "raw": "Black-body temperature (K): 270.4",
+     "src": "nasa_fact_moon"
+    },
+    "j2_1e6": {
+     "v": 202.7,
+     "raw": "J2 (x 10-6): 202.7",
+     "src": "nasa_fact_moon"
+    },
+    "rotation_h": {
+     "v": 655.72,
+     "raw": "Sidereal rotation period (hrs): 655.720",
+     "src": "nasa_fact_moon"
+    },
+    "obliquity_deg": {
+     "v": 6.68,
+     "raw": "Obliquity to orbit (deg): 6.68",
+     "src": "nasa_fact_moon"
+    },
+    "density_gcm3": {
+     "v": 3.344,
+     "sigma": 0.001,
+     "src": "jpl_ssd_sats"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 301
+   }
+  },
+  {
+   "key": "mars",
+   "naif": 499,
+   "name": "Марс",
+   "name_en": "Mars",
+   "parent": "sun",
+   "kind": "planet",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 42828.37362069909,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     3396.19,
+     3396.19,
+     3376.2
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "mass_1e24kg": {
+     "v": 0.64169,
+     "raw": "Mass (1024 kg): 0.64169",
+     "src": "nasa_fact_mars"
+    },
+    "radius_mean_km": {
+     "v": 3389.5,
+     "raw": "Volumetric mean radius (km): 3389.5",
+     "src": "nasa_fact_mars"
+    },
+    "density_kgm3": {
+     "v": 3934.0,
+     "raw": "Mean density (kg/m3): 3934",
+     "src": "nasa_fact_mars"
+    },
+    "bond_albedo": {
+     "v": 0.25,
+     "raw": "Bond albedo: 0.250",
+     "src": "nasa_fact_mars"
+    },
+    "geometric_albedo": {
+     "v": 0.17,
+     "raw": "Geometric albedo: 0.170",
+     "src": "nasa_fact_mars"
+    },
+    "blackbody_K": {
+     "v": 209.8,
+     "raw": "Black-body temperature (K): 209.8",
+     "src": "nasa_fact_mars"
+    },
+    "j2_1e6": {
+     "v": 1960.45,
+     "raw": "J2 (x 10-6): 1960.45",
+     "src": "nasa_fact_mars"
+    },
+    "rotation_h": {
+     "v": 24.6229,
+     "raw": "Sidereal rotation period (hrs): 24.6229",
+     "src": "nasa_fact_mars"
+    },
+    "obliquity_deg": {
+     "v": 25.19,
+     "raw": "Obliquity to orbit (deg): 25.19",
+     "src": "nasa_fact_mars"
+    },
+    "mean_temp_K": {
+     "raw": "Average temperature: ~214 K (-59 C)",
+     "v": 214.0,
+     "src": "nasa_fact_mars"
+    },
+    "scale_height_km": {
+     "raw": "Scale height: 11.0 km",
+     "v": 11.0,
+     "src": "nasa_fact_mars"
+    },
+    "mean_molecular_weight": {
+     "raw": "Mean molecular weight: 43.49",
+     "v": 43.49,
+     "src": "nasa_fact_mars"
+    },
+    "surface_pressure_bar": {
+     "raw": "Surface pressure: 6.36 mb at mean radius (variable from 4.0 to 8.7 mb depending on season)",
+     "v": 0.00636,
+     "src": "nasa_fact_mars"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 499
+   }
+  },
+  {
+   "key": "phobos",
+   "naif": 401,
+   "name": "Фобос",
+   "name_en": "Phobos",
+   "parent": "mars",
+   "kind": "moon",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 0.0007087546066894452,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     13.0,
+     11.4,
+     9.1
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "radius_mean_km": {
+     "v": 11.08,
+     "sigma": 0.04,
+     "src": "jpl_ssd_sats"
+    },
+    "density_gcm3": {
+     "v": 1.872,
+     "sigma": 0.076,
+     "src": "jpl_ssd_sats"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 401
+   }
+  },
+  {
+   "key": "deimos",
+   "naif": 402,
+   "name": "Деймос",
+   "name_en": "Deimos",
+   "parent": "mars",
+   "kind": "moon",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 9.615569648120313e-05,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     7.8,
+     6.0,
+     5.1
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "radius_mean_km": {
+     "v": 6.2,
+     "sigma": 0.24,
+     "src": "jpl_ssd_sats"
+    },
+    "density_gcm3": {
+     "v": 1.471,
+     "sigma": 0.166,
+     "src": "jpl_ssd_sats"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 402
+   }
+  },
+  {
+   "key": "jupiter",
+   "naif": 599,
+   "name": "Юпитер",
+   "name_en": "Jupiter",
+   "parent": "sun",
+   "kind": "planet",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 126686531.9003704,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     71492.0,
+     71492.0,
+     66854.0
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "mass_1e24kg": {
+     "v": 1898.13,
+     "raw": "Mass (1024 kg): 1,898.13",
+     "src": "nasa_fact_jupiter"
+    },
+    "radius_mean_km": {
+     "v": 69911.0,
+     "raw": "Volumetric mean radius (km): 69,911",
+     "src": "nasa_fact_jupiter"
+    },
+    "density_kgm3": {
+     "v": 1326.0,
+     "raw": "Mean density (kg/m3): 1,326",
+     "src": "nasa_fact_jupiter"
+    },
+    "bond_albedo": {
+     "v": 0.343,
+     "raw": "Bond albedo: 0.343",
+     "src": "nasa_fact_jupiter"
+    },
+    "geometric_albedo": {
+     "v": 0.538,
+     "raw": "Geometric albedo: 0.538",
+     "src": "nasa_fact_jupiter"
+    },
+    "blackbody_K": {
+     "v": 109.9,
+     "raw": "Black-body temperature (K): 109.9",
+     "src": "nasa_fact_jupiter"
+    },
+    "j2_1e6": {
+     "v": 14736.0,
+     "raw": "J2 (x 10-6): 14,736",
+     "src": "nasa_fact_jupiter"
+    },
+    "rotation_h": {
+     "v": 9.925,
+     "raw": "Sidereal rotation period (hrs): 9.9250*",
+     "src": "nasa_fact_jupiter"
+    },
+    "obliquity_deg": {
+     "v": 3.13,
+     "raw": "Obliquity to orbit (deg): 3.13",
+     "src": "nasa_fact_jupiter"
+    },
+    "mean_temp_K": {
+     "raw": "Temperature at 1 bar: 165 K (-108 C)",
+     "v": 165.0,
+     "src": "nasa_fact_jupiter"
+    },
+    "scale_height_km": {
+     "raw": "Scale height: 27 km",
+     "v": 27.0,
+     "src": "nasa_fact_jupiter"
+    },
+    "mean_molecular_weight": {
+     "raw": "Mean molecular weight: 2.22",
+     "v": 2.22,
+     "src": "nasa_fact_jupiter"
+    },
+    "surface_pressure_bar": {
+     "raw": "Surface Pressure: >>1000 bars",
+     "v": null,
+     "src": "nasa_fact_jupiter"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 599
+   }
+  },
+  {
+   "key": "io",
+   "naif": 501,
+   "name": "Ио",
+   "name_en": "Io",
+   "parent": "jupiter",
+   "kind": "moon",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 5959.915466180539,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     1829.4,
+     1819.4,
+     1815.7
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "radius_mean_km": {
+     "v": 1821.49,
+     "sigma": 0.5,
+     "src": "jpl_ssd_sats"
+    },
+    "density_gcm3": {
+     "v": 3.5276,
+     "sigma": 0.0029,
+     "src": "jpl_ssd_sats"
+    },
+    "geometric_albedo": {
+     "v": 0.62,
+     "raw": "Io (I): Visual geometric albedo 0.62",
+     "src": "nasa_fact_joviansat"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 501
+   }
+  },
+  {
+   "key": "europa",
+   "naif": 502,
+   "name": "Европа",
+   "name_en": "Europa",
+   "parent": "jupiter",
+   "kind": "moon",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 3202.712099607295,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     1562.6,
+     1560.3,
+     1559.5
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "radius_mean_km": {
+     "v": 1560.8,
+     "sigma": 0.3,
+     "src": "jpl_ssd_sats"
+    },
+    "density_gcm3": {
+     "v": 3.013,
+     "sigma": 0.0017,
+     "src": "jpl_ssd_sats"
+    },
+    "geometric_albedo": {
+     "v": 0.68,
+     "raw": "Europa (II): Visual geometric albedo 0.68",
+     "src": "nasa_fact_joviansat"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 502
+   }
+  },
+  {
+   "key": "ganymede",
+   "naif": 503,
+   "name": "Ганимед",
+   "name_en": "Ganymede",
+   "parent": "jupiter",
+   "kind": "moon",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 9887.832752719638,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     2631.2,
+     2631.2,
+     2631.2
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "radius_mean_km": {
+     "v": 2631.2,
+     "sigma": 1.7,
+     "src": "jpl_ssd_sats"
+    },
+    "density_gcm3": {
+     "v": 1.9416,
+     "sigma": 0.0038,
+     "src": "jpl_ssd_sats"
+    },
+    "geometric_albedo": {
+     "v": 0.44,
+     "raw": "Ganymede (III): Visual geometric albedo 0.44",
+     "src": "nasa_fact_joviansat"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 503
+   }
+  },
+  {
+   "key": "callisto",
+   "naif": 504,
+   "name": "Каллисто",
+   "name_en": "Callisto",
+   "parent": "jupiter",
+   "kind": "moon",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 7179.283402579837,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     2410.3,
+     2410.3,
+     2410.3
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "radius_mean_km": {
+     "v": 2410.3,
+     "sigma": 1.5,
+     "src": "jpl_ssd_sats"
+    },
+    "density_gcm3": {
+     "v": 1.834,
+     "sigma": 0.0034,
+     "src": "jpl_ssd_sats"
+    },
+    "geometric_albedo": {
+     "v": 0.19,
+     "raw": "Callisto (IV): Visual geometric albedo 0.19",
+     "src": "nasa_fact_joviansat"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 504
+   }
+  },
+  {
+   "key": "saturn",
+   "naif": 699,
+   "name": "Сатурн",
+   "name_en": "Saturn",
+   "parent": "sun",
+   "kind": "planet",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 37931206.23436167,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     60268.0,
+     60268.0,
+     54364.0
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "mass_1e24kg": {
+     "v": 568.32,
+     "raw": "Mass (1024 kg): 568.32",
+     "src": "nasa_fact_saturn"
+    },
+    "radius_mean_km": {
+     "v": 58232.0,
+     "raw": "Volumetric mean radius (km): 58,232",
+     "src": "nasa_fact_saturn"
+    },
+    "density_kgm3": {
+     "v": 687.0,
+     "raw": "Mean density (kg/m3): 687",
+     "src": "nasa_fact_saturn"
+    },
+    "bond_albedo": {
+     "v": 0.342,
+     "raw": "Bond albedo: 0.342",
+     "src": "nasa_fact_saturn"
+    },
+    "geometric_albedo": {
+     "v": 0.499,
+     "raw": "Geometric albedo: 0.499",
+     "src": "nasa_fact_saturn"
+    },
+    "blackbody_K": {
+     "v": 81.0,
+     "raw": "Black-body temperature (K): 81.0",
+     "src": "nasa_fact_saturn"
+    },
+    "j2_1e6": {
+     "v": 16298.0,
+     "raw": "J2 (x 10-6): 16,298.",
+     "src": "nasa_fact_saturn"
+    },
+    "rotation_h": {
+     "v": 10.656,
+     "raw": "Sidereal rotation period (hrs): 10.656*",
+     "src": "nasa_fact_saturn"
+    },
+    "obliquity_deg": {
+     "v": 26.73,
+     "raw": "Obliquity to orbit (deg): 26.73",
+     "src": "nasa_fact_saturn"
+    },
+    "mean_temp_K": {
+     "raw": "Temperature at 1 bar: 134 K (-139 C)",
+     "v": 134.0,
+     "src": "nasa_fact_saturn"
+    },
+    "scale_height_km": {
+     "raw": "Scale height: 59.5 km",
+     "v": 59.5,
+     "src": "nasa_fact_saturn"
+    },
+    "mean_molecular_weight": {
+     "raw": "Mean molecular weight: 2.07",
+     "v": 2.07,
+     "src": "nasa_fact_saturn"
+    },
+    "surface_pressure_bar": {
+     "raw": "Surface Pressure: >>1000 bars",
+     "v": null,
+     "src": "nasa_fact_saturn"
+    }
+   },
+   "rings": [
+    {
+     "name": "D",
+     "inner_km": 66900.0,
+     "outer_km": 74510.0,
+     "optical_depth": [
+      1e-05,
+      1e-05
+     ],
+     "albedo": null,
+     "raw": {
+      "inner": "D inner edge | 66,900 | 1.110 | 10-5 | ",
+      "outer": "D outer edge | 74,510 | 1.236 | 10-5 | "
+     },
+     "src": "nasa_fact_satring"
+    },
+    {
+     "name": "C",
+     "inner_km": 74658.0,
+     "outer_km": 91975.0,
+     "optical_depth": [
+      0.05,
+      0.35
+     ],
+     "albedo": [
+      0.12,
+      0.3
+     ],
+     "raw": {
+      "inner": "C inner edge | 74,658 | 1.239 | 0.05 - 0.35 | 0.12 - 0.30 | 5 | 1.4 - 5 | ",
+      "outer": "C outer edge | 91,975 | 1.526 | 0.05 - 0.35 | 0.2 | 5 | 2 - 7 | "
+     },
+     "src": "nasa_fact_satring"
+    },
+    {
+     "name": "B",
+     "inner_km": 91975.0,
+     "outer_km": 117507.0,
+     "optical_depth": [
+      0.4,
+      2.5
+     ],
+     "albedo": [
+      0.4,
+      0.6
+     ],
+     "raw": {
+      "inner": "B inner edge | 91,975 | 1.526 | 0.4 - 2.5 | 0.4 - 0.6 | 5 - 10 | 20 - 100 | ",
+      "outer": "B outer edge | 117,507 | 1.950 | 0.4 - 2.5 | "
+     },
+     "src": "nasa_fact_satring"
+    },
+    {
+     "name": "A",
+     "inner_km": 122340.0,
+     "outer_km": 136780.0,
+     "optical_depth": [
+      0.4,
+      1.0
+     ],
+     "albedo": [
+      0.4,
+      0.6
+     ],
+     "raw": {
+      "inner": "A inner edge | 122,340 | 2.030 | 0.4 - 1.0 | 0.4 - 0.6 | 10 - 30 | 30 - 40 | ",
+      "outer": "A outer edge | 136,780 | 2.270 | 0.4 - 1.0 | 0.4 - 0.6 | 10 - 30 | 20 - 30 | "
+     },
+     "src": "nasa_fact_satring"
+    },
+    {
+     "name": "G",
+     "inner_km": 166000.0,
+     "outer_km": 173000.0,
+     "optical_depth": [
+      1e-06,
+      1e-06
+     ],
+     "albedo": null,
+     "raw": {
+      "inner": "G inner edge | 166,000 | 2.754 | 10-6 |  | 105 | ",
+      "outer": "G outer edge | 173,000 | 2.874 | 10-6 | "
+     },
+     "src": "nasa_fact_satring"
+    },
+    {
+     "name": "E",
+     "inner_km": 180000.0,
+     "outer_km": 480000.0,
+     "optical_depth": [
+      1e-06,
+      1e-06
+     ],
+     "albedo": null,
+     "raw": {
+      "inner": "E inner edge | 180,000 | 2.987 | 10-6 |  | 107 | ",
+      "outer": "E outer edge | 480,000 | 7.964 | 10-6 |  | 107 | "
+     },
+     "src": "nasa_fact_satring"
+    }
+   ],
+   "ephemeris": {
+    "eph_target": 699
+   }
+  },
+  {
+   "key": "mimas",
+   "naif": 601,
+   "name": "Мимас",
+   "name_en": "Mimas",
+   "parent": "saturn",
+   "kind": "moon",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 2.503488768152587,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     207.8,
+     196.7,
+     190.6
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "radius_mean_km": {
+     "v": 198.2,
+     "sigma": 0.4,
+     "src": "jpl_ssd_sats"
+    },
+    "density_gcm3": {
+     "v": 1.1501,
+     "sigma": 0.007,
+     "src": "jpl_ssd_sats"
+    },
+    "geometric_albedo": {
+     "v": 0.6,
+     "raw": "Mimas (I): Visual geometric albedo 0.6",
+     "src": "nasa_fact_saturniansat"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 601
+   }
+  },
+  {
+   "key": "enceladus",
+   "naif": 602,
+   "name": "Энцелад",
+   "name_en": "Enceladus",
+   "parent": "saturn",
+   "kind": "moon",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 7.210366688598896,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     256.6,
+     251.4,
+     248.3
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "radius_mean_km": {
+     "v": 252.1,
+     "sigma": 0.2,
+     "src": "jpl_ssd_sats"
+    },
+    "density_gcm3": {
+     "v": 1.6097,
+     "sigma": 0.0038,
+     "src": "jpl_ssd_sats"
+    },
+    "geometric_albedo": {
+     "v": 1.0,
+     "raw": "Enceladus (II): Visual geometric albedo 1.0",
+     "src": "nasa_fact_saturniansat"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 602
+   }
+  },
+  {
+   "key": "tethys",
+   "naif": 603,
+   "name": "Тефия",
+   "name_en": "Tethys",
+   "parent": "saturn",
+   "kind": "moon",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 41.21352885489587,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     538.4,
+     528.3,
+     526.3
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "radius_mean_km": {
+     "v": 531.1,
+     "sigma": 0.6,
+     "src": "jpl_ssd_sats"
+    },
+    "density_gcm3": {
+     "v": 0.984,
+     "sigma": 0.0033,
+     "src": "jpl_ssd_sats"
+    },
+    "geometric_albedo": {
+     "v": 0.8,
+     "raw": "Tethys (III): Visual geometric albedo 0.8",
+     "src": "nasa_fact_saturniansat"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 603
+   }
+  },
+  {
+   "key": "dione",
+   "naif": 604,
+   "name": "Диона",
+   "name_en": "Dione",
+   "parent": "saturn",
+   "kind": "moon",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 73.11607172482067,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     563.4,
+     561.3,
+     559.6
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "radius_mean_km": {
+     "v": 561.4,
+     "sigma": 0.4,
+     "src": "jpl_ssd_sats"
+    },
+    "density_gcm3": {
+     "v": 1.4781,
+     "sigma": 0.0032,
+     "src": "jpl_ssd_sats"
+    },
+    "geometric_albedo": {
+     "v": 0.7,
+     "raw": "Dione (IV): Visual geometric albedo 0.7",
+     "src": "nasa_fact_saturniansat"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 604
+   }
+  },
+  {
+   "key": "rhea",
+   "naif": 605,
+   "name": "Рея",
+   "name_en": "Rhea",
+   "parent": "saturn",
+   "kind": "moon",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 153.9417519146563,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     765.0,
+     763.1,
+     762.4
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "radius_mean_km": {
+     "v": 763.5,
+     "sigma": 0.6,
+     "src": "jpl_ssd_sats"
+    },
+    "density_gcm3": {
+     "v": 1.2372,
+     "sigma": 0.0029,
+     "src": "jpl_ssd_sats"
+    },
+    "geometric_albedo": {
+     "v": 0.7,
+     "raw": "Rhea (V): Visual geometric albedo 0.7",
+     "src": "nasa_fact_saturniansat"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 605
+   }
+  },
+  {
+   "key": "titan",
+   "naif": 606,
+   "name": "Титан",
+   "name_en": "Titan",
+   "parent": "saturn",
+   "kind": "moon",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 8978.137095521046,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     2575.15,
+     2574.78,
+     2574.47
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "radius_mean_km": {
+     "v": 2574.76,
+     "sigma": 0.02,
+     "src": "jpl_ssd_sats"
+    },
+    "density_gcm3": {
+     "v": 1.8814,
+     "sigma": 0.0001,
+     "src": "jpl_ssd_sats"
+    },
+    "geometric_albedo": {
+     "v": 0.22,
+     "raw": "Titan (VI): Visual geometric albedo 0.22",
+     "src": "nasa_fact_saturniansat"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 606
+   }
+  },
+  {
+   "key": "iapetus",
+   "naif": 608,
+   "name": "Япет",
+   "name_en": "Iapetus",
+   "parent": "saturn",
+   "kind": "moon",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 120.51510601376421,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     745.7,
+     745.7,
+     712.1
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "radius_mean_km": {
+     "v": 734.3,
+     "sigma": 2.8,
+     "src": "jpl_ssd_sats"
+    },
+    "density_gcm3": {
+     "v": 1.0887,
+     "sigma": 0.0125,
+     "src": "jpl_ssd_sats"
+    },
+    "geometric_albedo": {
+     "v": 0.275,
+     "raw": "Iapetus (VIII): Visual geometric albedo 0.05 / 0.5",
+     "src": "nasa_fact_saturniansat",
+     "range": [
+      0.05,
+      0.5
+     ]
+    }
+   },
+   "ephemeris": {
+    "eph_target": 608
+   }
+  },
+  {
+   "key": "uranus",
+   "naif": 799,
+   "name": "Уран",
+   "name_en": "Uranus",
+   "parent": "sun",
+   "kind": "planet",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 5793951.256527211,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     25559.0,
+     25559.0,
+     24973.0
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "mass_1e24kg": {
+     "v": 86.811,
+     "raw": "Mass (1024 kg): 86.811",
+     "src": "nasa_fact_uranus"
+    },
+    "radius_mean_km": {
+     "v": 25362.0,
+     "raw": "Volumetric mean radius (km): 25,362",
+     "src": "nasa_fact_uranus"
+    },
+    "density_kgm3": {
+     "v": 1270.0,
+     "raw": "Mean density (kg/m3): 1,270",
+     "src": "nasa_fact_uranus"
+    },
+    "bond_albedo": {
+     "v": 0.3,
+     "raw": "Bond albedo: 0.300",
+     "src": "nasa_fact_uranus"
+    },
+    "geometric_albedo": {
+     "v": 0.488,
+     "raw": "Geometric albedo: 0.488",
+     "src": "nasa_fact_uranus"
+    },
+    "blackbody_K": {
+     "v": 58.1,
+     "raw": "Black-body temperature (K): 58.1",
+     "src": "nasa_fact_uranus"
+    },
+    "j2_1e6": {
+     "v": 3343.43,
+     "raw": "J2 (x 10-6): 3343.43",
+     "src": "nasa_fact_uranus"
+    },
+    "rotation_h": {
+     "v": -17.24,
+     "raw": "Sidereal rotation period (hrs): -17.24*",
+     "src": "nasa_fact_uranus"
+    },
+    "obliquity_deg": {
+     "v": 97.77,
+     "raw": "Obliquity to orbit (deg): 97.77",
+     "src": "nasa_fact_uranus"
+    },
+    "mean_temp_K": {
+     "raw": "Temperature at 1 bar: 76 K (-197 C)",
+     "v": 76.0,
+     "src": "nasa_fact_uranus"
+    },
+    "scale_height_km": {
+     "raw": "Scale height: 27.7 km",
+     "v": 27.7,
+     "src": "nasa_fact_uranus"
+    },
+    "mean_molecular_weight": {
+     "raw": "Mean molecular weight: 2.64",
+     "v": 2.64,
+     "src": "nasa_fact_uranus"
+    },
+    "surface_pressure_bar": {
+     "raw": "Surface Pressure: >>1000 bars",
+     "v": null,
+     "src": "nasa_fact_uranus"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 799
+   }
+  },
+  {
+   "key": "miranda",
+   "naif": 705,
+   "name": "Миранда",
+   "name_en": "Miranda",
+   "parent": "uranus",
+   "kind": "moon",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 4.3195168992321005,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     240.4,
+     234.2,
+     232.9
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "radius_mean_km": {
+     "v": 235.8,
+     "sigma": 0.7,
+     "src": "jpl_ssd_sats"
+    },
+    "density_gcm3": {
+     "v": 1.178,
+     "sigma": 0.053,
+     "src": "jpl_ssd_sats"
+    },
+    "geometric_albedo": {
+     "v": 0.32,
+     "raw": "Miranda (UV): Visual geometric albedo 0.32",
+     "src": "nasa_fact_uraniansat"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 705
+   }
+  },
+  {
+   "key": "ariel",
+   "naif": 701,
+   "name": "Ариэль",
+   "name_en": "Ariel",
+   "parent": "uranus",
+   "kind": "moon",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 83.46344431770477,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     581.1,
+     577.9,
+     577.7
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "radius_mean_km": {
+     "v": 578.9,
+     "sigma": 0.6,
+     "src": "jpl_ssd_sats"
+    },
+    "density_gcm3": {
+     "v": 1.539,
+     "sigma": 0.026,
+     "src": "jpl_ssd_sats"
+    },
+    "geometric_albedo": {
+     "v": 0.39,
+     "raw": "Ariel (UI): Visual geometric albedo 0.39",
+     "src": "nasa_fact_uraniansat"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 701
+   }
+  },
+  {
+   "key": "umbriel",
+   "naif": 702,
+   "name": "Умбриэль",
+   "name_en": "Umbriel",
+   "parent": "uranus",
+   "kind": "moon",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 85.09338094489388,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     584.7,
+     584.7,
+     584.7
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "radius_mean_km": {
+     "v": 584.7,
+     "sigma": 2.8,
+     "src": "jpl_ssd_sats"
+    },
+    "density_gcm3": {
+     "v": 1.523,
+     "sigma": 0.041,
+     "src": "jpl_ssd_sats"
+    },
+    "geometric_albedo": {
+     "v": 0.21,
+     "raw": "Umbriel (UII): Visual geometric albedo 0.21",
+     "src": "nasa_fact_uraniansat"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 702
+   }
+  },
+  {
+   "key": "titania",
+   "naif": 703,
+   "name": "Титания",
+   "name_en": "Titania",
+   "parent": "uranus",
+   "kind": "moon",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 226.9437003741248,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     788.9,
+     788.9,
+     788.9
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "radius_mean_km": {
+     "v": 788.9,
+     "sigma": 1.8,
+     "src": "jpl_ssd_sats"
+    },
+    "density_gcm3": {
+     "v": 1.653,
+     "sigma": 0.032,
+     "src": "jpl_ssd_sats"
+    },
+    "geometric_albedo": {
+     "v": 0.27,
+     "raw": "Titania (UIII): Visual geometric albedo 0.27",
+     "src": "nasa_fact_uraniansat"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 703
+   }
+  },
+  {
+   "key": "oberon",
+   "naif": 704,
+   "name": "Оберон",
+   "name_en": "Oberon",
+   "parent": "uranus",
+   "kind": "moon",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 205.3234302535623,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     761.4,
+     761.4,
+     761.4
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "radius_mean_km": {
+     "v": 761.4,
+     "sigma": 2.6,
+     "src": "jpl_ssd_sats"
+    },
+    "density_gcm3": {
+     "v": 1.664,
+     "sigma": 0.05,
+     "src": "jpl_ssd_sats"
+    },
+    "geometric_albedo": {
+     "v": 0.23,
+     "raw": "Oberon (UIV): Visual geometric albedo 0.23",
+     "src": "nasa_fact_uraniansat"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 704
+   }
+  },
+  {
+   "key": "neptune",
+   "naif": 899,
+   "name": "Нептун",
+   "name_en": "Neptune",
+   "parent": "sun",
+   "kind": "planet",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 6835103.145462294,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     24764.0,
+     24764.0,
+     24341.0
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "mass_1e24kg": {
+     "v": 102.409,
+     "raw": "Mass (1024 kg): 102.409",
+     "src": "nasa_fact_neptune"
+    },
+    "radius_mean_km": {
+     "v": 24622.0,
+     "raw": "Volumetric mean radius (km): 24,622",
+     "src": "nasa_fact_neptune"
+    },
+    "density_kgm3": {
+     "v": 1638.0,
+     "raw": "Mean density (kg/m3): 1,638",
+     "src": "nasa_fact_neptune"
+    },
+    "bond_albedo": {
+     "v": 0.29,
+     "raw": "Bond albedo: 0.290",
+     "src": "nasa_fact_neptune"
+    },
+    "geometric_albedo": {
+     "v": 0.442,
+     "raw": "Geometric albedo: 0.442",
+     "src": "nasa_fact_neptune"
+    },
+    "blackbody_K": {
+     "v": 46.6,
+     "raw": "Black-body temperature (K): 46.6",
+     "src": "nasa_fact_neptune"
+    },
+    "j2_1e6": {
+     "v": 3411.0,
+     "raw": "J2 (x 10-6): 3411.",
+     "src": "nasa_fact_neptune"
+    },
+    "rotation_h": {
+     "v": 16.11,
+     "raw": "Sidereal rotation period (hrs): 16.11*",
+     "src": "nasa_fact_neptune"
+    },
+    "obliquity_deg": {
+     "v": 28.32,
+     "raw": "Obliquity to orbit (deg): 28.32",
+     "src": "nasa_fact_neptune"
+    },
+    "mean_temp_K": {
+     "raw": "Temperature at 1 bar: 72 K (-201 C)",
+     "v": 72.0,
+     "src": "nasa_fact_neptune"
+    },
+    "scale_height_km": {
+     "raw": "Scale height: 19.1 - 20.3 km",
+     "v": 19.1,
+     "src": "nasa_fact_neptune"
+    },
+    "mean_molecular_weight": {
+     "raw": "Mean molecular weight: 2.53 - 2.69",
+     "v": 2.53,
+     "src": "nasa_fact_neptune"
+    },
+    "surface_pressure_bar": {
+     "raw": "Surface Pressure: >>1000 bars",
+     "v": null,
+     "src": "nasa_fact_neptune"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 899
+   }
+  },
+  {
+   "key": "triton",
+   "naif": 801,
+   "name": "Тритон",
+   "name_en": "Triton",
+   "parent": "neptune",
+   "kind": "moon",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 1428.495462910464,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     1352.6,
+     1352.6,
+     1352.6
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "radius_mean_km": {
+     "v": 1352.6,
+     "sigma": 2.4,
+     "src": "jpl_ssd_sats"
+    },
+    "density_gcm3": {
+     "v": 2.0649,
+     "sigma": 0.011,
+     "src": "jpl_ssd_sats"
+    },
+    "geometric_albedo": {
+     "v": 0.72,
+     "raw": "Triton (NI): Visual geometric albedo 0.72",
+     "src": "nasa_fact_neptuniansat"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 801
+   }
+  },
+  {
+   "key": "pluto",
+   "naif": 999,
+   "name": "Плутон",
+   "name_en": "Pluto",
+   "parent": "sun",
+   "kind": "dwarf",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 869.6138177608749,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     1188.3,
+     1188.3,
+     1188.3
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "mass_1e24kg": {
+     "v": 0.01303,
+     "raw": "Mass (1024 kg): 0.01303",
+     "src": "nasa_fact_pluto"
+    },
+    "radius_mean_km": {
+     "v": 1188.0,
+     "raw": "Volumetric mean radius (km): 1188",
+     "src": "nasa_fact_pluto"
+    },
+    "density_kgm3": {
+     "v": 1854.0,
+     "raw": "Mean density (kg/m3): 1854",
+     "src": "nasa_fact_pluto"
+    },
+    "bond_albedo": {
+     "v": 0.72,
+     "raw": "Bond albedo: 0.72",
+     "src": "nasa_fact_pluto"
+    },
+    "geometric_albedo": {
+     "v": 0.52,
+     "raw": "Geometric albedo: 0.52",
+     "src": "nasa_fact_pluto"
+    },
+    "blackbody_K": {
+     "v": 37.5,
+     "raw": "Black-body temperature (K): 37.5",
+     "src": "nasa_fact_pluto"
+    },
+    "rotation_h": {
+     "v": -153.2928,
+     "raw": "Sidereal rotation period (hrs): -153.2928",
+     "src": "nasa_fact_pluto"
+    },
+    "obliquity_deg": {
+     "v": 119.51,
+     "raw": "Obliquity to orbit (deg): 119.51",
+     "src": "nasa_fact_pluto"
+    },
+    "mean_temp_K": {
+     "raw": "Surface temperature: 24 - 38 K (-247 - -233 C)",
+     "v": 31.0,
+     "range": [
+      24.0,
+      38.0
+     ],
+     "src": "nasa_fact_pluto"
+    },
+    "scale_height_km": {
+     "raw": "Scale height: ~18 km lower atmosphere, ~50 km above 30 km",
+     "v": 18.0,
+     "src": "nasa_fact_pluto"
+    },
+    "mean_molecular_weight": {
+     "raw": "Mean molecular weight: ~28",
+     "v": 28.0,
+     "src": "nasa_fact_pluto"
+    },
+    "surface_pressure_bar": {
+     "raw": "Surface Pressure: ~13 microbar",
+     "v": 1.3e-05,
+     "src": "nasa_fact_pluto"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 999
+   }
+  },
+  {
+   "key": "charon",
+   "naif": 901,
+   "name": "Харон",
+   "name_en": "Charon",
+   "parent": "pluto",
+   "kind": "moon",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 105.8799888601881,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     606.0,
+     606.0,
+     606.0
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "radius_mean_km": {
+     "v": 606.0,
+     "sigma": 0.5,
+     "src": "jpl_ssd_sats"
+    },
+    "density_gcm3": {
+     "v": 1.853,
+     "sigma": 0.004,
+     "src": "jpl_ssd_sats"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 901
+   }
+  },
+  {
+   "key": "ceres",
+   "naif": 2000001,
+   "name": "Церера",
+   "name_en": "Ceres",
+   "parent": "sun",
+   "kind": "dwarf",
+   "visible": true,
+   "gm_km3s2": {
+    "v": 62.628888644409926,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     487.3,
+     487.3,
+     446.0
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "radius_mean_km": {
+     "v": 469.7,
+     "src": "sbdb_ceres",
+     "raw": "diameter 939.4 km (Nature vol. 537, pp515-517 (22 September 2016))"
+    },
+    "geometric_albedo": {
+     "v": 0.09,
+     "src": "sbdb_ceres",
+     "raw": "Li et al. (2006) Icarus v182:pp143-160"
+    },
+    "rotation_h": {
+     "v": 9.07417,
+     "src": "sbdb_ceres",
+     "raw": "Nature vol. 537, pp515-517 (22 September 2016)"
+    },
+    "extent_km": {
+     "v": "964.4 x 964.2 x 891.8",
+     "src": "sbdb_ceres",
+     "raw": "Nature vol. 537, pp515-517 (22 September 2016)"
+    },
+    "density_gcm3": {
+     "v": 2.162,
+     "src": "sbdb_ceres"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 2000001,
+    "note": "переподгонка SPK Horizons, 1600–2500"
+   }
+  },
+  {
+   "key": "eris",
+   "naif": 2136199,
+   "name": "Эрида",
+   "name_en": "Eris",
+   "parent": "sun",
+   "kind": "dwarf",
+   "visible": true,
+   "orientation": null,
+   "gm_km3s2": {
+    "v": 1098.9902379999999,
+    "sigma": 5.673155,
+    "src": "lit_holler2021",
+    "quote": "масса системы Эрида+Дисномия (1.6466 ± 0.0085)×10^22 кг, табл. 2, столбец Combined; × G (CODATA 2018)",
+    "note": "масса всей системы; Дисномия ~0,5 % и как тело не моделируется"
+   },
+   "phys": {
+    "rotation_h": {
+     "v": 25.9,
+     "src": "sbdb_eris",
+     "raw": "LCDB (Rev. 2023-October); Warner et al., 2009"
+    },
+    "radius_mean_km": {
+     "v": 1163.0,
+     "sigma": 6.0,
+     "src": "lit_sicardy2011",
+     "quote": "«a more precise radius measurement of 1163±6 km» (Holler et al. 2021, разд. 4)"
+    },
+    "geometric_albedo": {
+     "v": 0.96,
+     "range": [
+      0.92,
+      1.05
+     ],
+     "src": "lit_sicardy2011",
+     "quote": "аннотация: visible geometric albedo p(V) = 0.96 (+0.09, −0.04)"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 2136199,
+    "note": "переподгонка SPK Horizons, 1600–2500"
+   }
+  },
+  {
+   "key": "haumea",
+   "naif": 2136108,
+   "name": "Хаумеа",
+   "name_en": "Haumea",
+   "parent": "sun",
+   "kind": "dwarf",
+   "visible": true,
+   "orientation": null,
+   "gm_km3s2": {
+    "v": 267.372458,
+    "sigma": 2.66972,
+    "src": "lit_ragozzine2009",
+    "quote": "Mass 4.006 ± 0.040 ×10^21 кг, табл. 2; × G (CODATA 2018)"
+   },
+   "radii_km": {
+    "v": [
+     1161.0,
+     852.0,
+     513.0
+    ],
+    "sigma": [
+     30.0,
+     2.0,
+     16.0
+    ],
+    "src": "lit_ortiz2017",
+    "quote": "«a × b × c = (1,161 ± 30) × (852 ± 2) × (513 ± 16) km»"
+   },
+   "phys": {
+    "rotation_h": {
+     "v": 3.9154,
+     "src": "sbdb_haumea",
+     "raw": "LCDB (Rev. 2023-October); Warner et al., 2009"
+    },
+    "radius_mean_km": {
+     "v": 870.0,
+     "raw": "equatorial diameter of about 1,080 miles (about 1,740 kilometers)",
+     "approx": true,
+     "src": "nasa_science_haumea"
+    },
+    "geometric_albedo": {
+     "v": 0.51,
+     "sigma": 0.02,
+     "src": "lit_ortiz2017",
+     "quote": "аннотация: «a geometric albedo of 0.51 ± 0.02»"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 2136108,
+    "note": "переподгонка SPK Horizons, 1600–2500"
+   }
+  },
+  {
+   "key": "makemake",
+   "naif": 2136472,
+   "name": "Макемаке",
+   "name_en": "Makemake",
+   "parent": "sun",
+   "kind": "dwarf",
+   "visible": true,
+   "orientation": null,
+   "gm_km3s2": {
+    "v": 179.33626985149834,
+    "sigma": 19.19884754581674,
+    "src": "preprint_bamberger2025",
+    "quote": "орбита MK2: P = 18.023 ± 0.017 сут, a = 22250 ± 780 км (аннотация); GM = 4π²a³/P²",
+    "note": "препринт без рецензии; масса всей системы, MK2 считается пренебрежимо малым"
+   },
+   "phys": {
+    "rotation_h": {
+     "v": 22.8266,
+     "src": "sbdb_makemake",
+     "raw": "LCDB (Rev. 2023-October); Warner et al., 2009"
+    },
+    "radius_mean_km": {
+     "v": 715.0,
+     "raw": "radius of approximately 444 miles (715 kilometers)",
+     "approx": true,
+     "src": "nasa_science_makemake"
+    },
+    "geometric_albedo": {
+     "v": 0.77,
+     "sigma": 0.03,
+     "src": "lit_ortiz2012",
+     "quote": "аннотация: V-band geometric albedo 0.77 ± 0.03"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 2136472,
+    "note": "переподгонка SPK Horizons, 1600–2500"
+   }
+  },
+  {
+   "key": "halley",
+   "naif": 1000036,
+   "name": "Комета Галлея",
+   "name_en": "1P/Halley",
+   "parent": "sun",
+   "kind": "comet",
+   "visible": true,
+   "radii_km": {
+    "v": [
+     8.0,
+     4.0,
+     4.0
+    ],
+    "src": "pck00011"
+   },
+   "orientation": null,
+   "phys": {
+    "radius_mean_km": {
+     "v": 5.5,
+     "src": "sbdb_halley",
+     "raw": "diameter 11.0 km (Lamy,P.L.;Toth,I.;Fernandez,Y.R.;Weaver,H.A. (2004) Comets II, pp. 223-264)"
+    },
+    "geometric_albedo": {
+     "v": 0.04,
+     "src": "sbdb_halley",
+     "raw": "Earth, Moon, and Planets, v. 89, Issue 1, p. 117-134 (2002)"
+    },
+    "extent_km": {
+     "v": "14.9x8.2",
+     "src": "sbdb_halley",
+     "raw": "Keller et al. (1987) Astron. Astrophys. 187:807-823"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 1000036,
+    "note": "переподгонка SPK Horizons, 1600–2500"
+   }
+  },
+  {
+   "key": "pallas",
+   "naif": 2000002,
+   "name": "Паллада",
+   "name_en": "Pallas",
+   "parent": "sun",
+   "kind": "perturber",
+   "visible": false,
+   "gm_km3s2": {
+    "v": 13.66587814596742,
+    "src": "gm_de440"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "radius_mean_km": {
+     "v": 256.5,
+     "src": "sbdb_pallas",
+     "raw": "diameter 513 km (Marsset et al., Nature Astronomy 4, 569-576 (2020))"
+    },
+    "geometric_albedo": {
+     "v": 0.155,
+     "src": "sbdb_pallas",
+     "raw": "Vernazza et al., A&A 654, A56 (2021)"
+    },
+    "rotation_h": {
+     "v": 7.8132214,
+     "src": "sbdb_pallas",
+     "raw": "Carry et al., Icarus 205, 460-472 (2010)"
+    },
+    "extent_km": {
+     "v": "568x532x448",
+     "src": "sbdb_pallas",
+     "raw": "Marsset et al., Nature Astronomy 4, 569-576 (2020)"
+    },
+    "density_gcm3": {
+     "v": 2.89,
+     "src": "sbdb_pallas"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 2000002,
+    "note": "переподгонка SPK Horizons, 1600–2500"
+   }
+  },
+  {
+   "key": "vesta",
+   "naif": 2000004,
+   "name": "Веста",
+   "name_en": "Vesta",
+   "parent": "sun",
+   "kind": "perturber",
+   "visible": false,
+   "gm_km3s2": {
+    "v": 17.28823287917151,
+    "src": "gm_de440"
+   },
+   "radii_km": {
+    "v": [
+     289.0,
+     280.0,
+     229.0
+    ],
+    "src": "pck00011"
+   },
+   "orientation": "pck00011",
+   "phys": {
+    "radius_mean_km": {
+     "v": 261.385,
+     "src": "sbdb_vesta",
+     "raw": "diameter 522.77 km (Park, R.S. et al. 2025, Nat Astron, DOI: 10.1038/s41550-025-02533-7)"
+    },
+    "geometric_albedo": {
+     "v": 0.4228,
+     "src": "sbdb_vesta",
+     "raw": "IRAS-A-FPA-3-RDR-IMPS-V6.0"
+    },
+    "rotation_h": {
+     "v": 5.3421276322,
+     "src": "sbdb_vesta",
+     "raw": "Park, R.S. et al. 2025, Nat Astron, DOI: 10.1038/s41550-025-02533-7"
+    },
+    "extent_km": {
+     "v": "569.24 x 554.48 x 452.66",
+     "src": "sbdb_vesta",
+     "raw": "Park, R.S. et al. 2025, Nat Astron, DOI: 10.1038/s41550-025-02533-7"
+    },
+    "density_gcm3": {
+     "v": 3.46,
+     "src": "sbdb_vesta"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 2000004,
+    "note": "переподгонка SPK Horizons, 1600–2500"
+   }
+  },
+  {
+   "key": "hygiea",
+   "naif": 2000010,
+   "name": "Гигея",
+   "name_en": "Hygiea",
+   "parent": "sun",
+   "kind": "perturber",
+   "visible": false,
+   "gm_km3s2": {
+    "v": 5.625147645385228,
+    "src": "gm_de440"
+   },
+   "orientation": null,
+   "phys": {
+    "radius_mean_km": {
+     "v": 203.56,
+     "src": "sbdb_hygiea",
+     "raw": "diameter 407.12 km (IRAS-A-FPA-3-RDR-IMPS-V6.0)"
+    },
+    "geometric_albedo": {
+     "v": 0.0717,
+     "src": "sbdb_hygiea",
+     "raw": "IRAS-A-FPA-3-RDR-IMPS-V6.0"
+    },
+    "rotation_h": {
+     "v": 13.828,
+     "src": "sbdb_hygiea",
+     "raw": "LCDB (Rev. 2023-October); Warner et al., 2009"
+    }
+   },
+   "ephemeris": {
+    "eph_target": 2000010,
+    "note": "переподгонка SPK Horizons, 1600–2500"
+   }
+  }
+ ],
+ "missing": {
+  "phobos": [
+   "bond_albedo",
+   "geometric_albedo"
+  ],
+  "deimos": [
+   "bond_albedo",
+   "geometric_albedo"
+  ],
+  "io": [
+   "bond_albedo"
+  ],
+  "europa": [
+   "bond_albedo"
+  ],
+  "ganymede": [
+   "bond_albedo"
+  ],
+  "callisto": [
+   "bond_albedo"
+  ],
+  "mimas": [
+   "bond_albedo"
+  ],
+  "enceladus": [
+   "bond_albedo"
+  ],
+  "tethys": [
+   "bond_albedo"
+  ],
+  "dione": [
+   "bond_albedo"
+  ],
+  "rhea": [
+   "bond_albedo"
+  ],
+  "titan": [
+   "bond_albedo"
+  ],
+  "iapetus": [
+   "bond_albedo"
+  ],
+  "miranda": [
+   "bond_albedo"
+  ],
+  "ariel": [
+   "bond_albedo"
+  ],
+  "umbriel": [
+   "bond_albedo"
+  ],
+  "titania": [
+   "bond_albedo"
+  ],
+  "oberon": [
+   "bond_albedo"
+  ],
+  "triton": [
+   "bond_albedo"
+  ],
+  "charon": [
+   "bond_albedo",
+   "geometric_albedo"
+  ],
+  "ceres": [
+   "bond_albedo"
+  ],
+  "eris": [
+   "bond_albedo"
+  ],
+  "haumea": [
+   "bond_albedo"
+  ],
+  "makemake": [
+   "bond_albedo"
+  ],
+  "halley": [
+   "gm_km3s2",
+   "bond_albedo"
+  ]
+ }
+}

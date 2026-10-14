@@ -1,0 +1,229 @@
+{
+ "gm_de440": {
+  "title": "NAIF gm_de440.tpc",
+  "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/pck/gm_de440.tpc",
+  "md5": "a6bb37afab6815c9573a3ec208a8199a"
+ },
+ "pck00011": {
+  "title": "NAIF pck00011.tpc (IAU WGCCRE)",
+  "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/pck/pck00011.tpc",
+  "md5": "3c0bdc01bb4101d6242cf96ece67a586"
+ },
+ "nasa_fact_sun": {
+  "title": "NASA Planetary Fact Sheet (NSSDCA)",
+  "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html",
+  "fetched_utc": "2026-10-11T16:23:59Z"
+ },
+ "nasa_fact_mercury": {
+  "title": "NASA Planetary Fact Sheet (NSSDCA)",
+  "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html",
+  "fetched_utc": "2026-10-11T16:24:01Z"
+ },
+ "nasa_fact_venus": {
+  "title": "NASA Planetary Fact Sheet (NSSDCA)",
+  "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html",
+  "fetched_utc": "2026-10-11T16:24:03Z"
+ },
+ "nasa_fact_earth": {
+  "title": "NASA Planetary Fact Sheet (NSSDCA)",
+  "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+  "fetched_utc": "2026-10-11T16:24:04Z"
+ },
+ "nasa_fact_moon": {
+  "title": "NASA Planetary Fact Sheet (NSSDCA)",
+  "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+  "fetched_utc": "2026-10-11T16:24:06Z"
+ },
+ "nasa_fact_mars": {
+  "title": "NASA Planetary Fact Sheet (NSSDCA)",
+  "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html",
+  "fetched_utc": "2026-10-11T16:24:07Z"
+ },
+ "nasa_fact_jupiter": {
+  "title": "NASA Planetary Fact Sheet (NSSDCA)",
+  "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html",
+  "fetched_utc": "2026-10-11T16:24:09Z"
+ },
+ "nasa_fact_saturn": {
+  "title": "NASA Planetary Fact Sheet (NSSDCA)",
+  "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html",
+  "fetched_utc": "2026-10-11T16:24:11Z"
+ },
+ "nasa_fact_uranus": {
+  "title": "NASA Planetary Fact Sheet (NSSDCA)",
+  "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/uranusfact.html",
+  "fetched_utc": "2026-10-11T16:24:12Z"
+ },
+ "nasa_fact_neptune": {
+  "title": "NASA Planetary Fact Sheet (NSSDCA)",
+  "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/neptunefact.html",
+  "fetched_utc": "2026-10-11T16:24:14Z"
+ },
+ "nasa_fact_pluto": {
+  "title": "NASA Planetary Fact Sheet (NSSDCA)",
+  "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/plutofact.html",
+  "fetched_utc": "2026-10-11T16:24:15Z"
+ },
+ "jpl_ssd_sats": {
+  "title": "JPL SSD, Planetary Satellite Physical Parameters",
+  "url": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+  "fetched_utc": "2026-10-11T16:24:17Z"
+ },
+ "nasa_science_eris": {
+  "title": "NASA Science, Dwarf Planets",
+  "url": "https://science.nasa.gov/dwarf-planets/eris/",
+  "fetched_utc": "2026-10-11T16:24:19Z"
+ },
+ "nasa_science_haumea": {
+  "title": "NASA Science, Dwarf Planets",
+  "url": "https://science.nasa.gov/dwarf-planets/haumea/",
+  "fetched_utc": "2026-10-11T16:24:20Z"
+ },
+ "nasa_science_makemake": {
+  "title": "NASA Science, Dwarf Planets",
+  "url": "https://science.nasa.gov/dwarf-planets/makemake/",
+  "fetched_utc": "2026-10-11T16:24:21Z"
+ },
+ "nasa_fact_satring": {
+  "title": "NASA Saturnian Rings Fact Sheet (NSSDCA)",
+  "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/satringfact.html",
+  "fetched_utc": "2026-10-11T19:29:23Z"
+ },
+ "nasa_fact_joviansat": {
+  "title": "NASA Planetary Fact Sheet (NSSDCA), спутники: jovian",
+  "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/joviansatfact.html",
+  "fetched_utc": "2026-10-13T14:23:24Z"
+ },
+ "nasa_fact_saturniansat": {
+  "title": "NASA Planetary Fact Sheet (NSSDCA), спутники: saturnian",
+  "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturniansatfact.html",
+  "fetched_utc": "2026-10-13T14:23:26Z"
+ },
+ "nasa_fact_uraniansat": {
+  "title": "NASA Planetary Fact Sheet (NSSDCA), спутники: uranian",
+  "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/uraniansatfact.html",
+  "fetched_utc": "2026-10-13T14:23:27Z"
+ },
+ "nasa_fact_neptuniansat": {
+  "title": "NASA Planetary Fact Sheet (NSSDCA), спутники: neptunian",
+  "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/neptuniansatfact.html",
+  "fetched_utc": "2026-10-13T14:23:29Z"
+ },
+ "codata2018_G": {
+  "title": "CODATA 2018: G = 6.67430e-11 m^3 kg^-1 s^-2",
+  "url": "https://physics.nist.gov/cgi-bin/cuu/Value?bg"
+ },
+ "lit_holler2021": {
+  "title": "Holler B. J., Grundy W. M., Buie M. W., Noll K. S. The Eris/Dysnomia system I: The orbit of Dysnomia. Icarus 355, 114130 (2021)",
+  "url": "https://arxiv.org/abs/2009.13733",
+  "doi": "10.1016/j.icarus.2020.114130"
+ },
+ "lit_sicardy2011": {
+  "title": "Sicardy B. et al. A Pluto-like radius and a high albedo for the dwarf planet Eris from an occultation. Nature 478, 493 (2011); значение приводится по Holler et al. 2021, разд. 4",
+  "url": "https://arxiv.org/abs/2009.13733"
+ },
+ "lit_ragozzine2009": {
+  "title": "Ragozzine D., Brown M. E. Orbits and Masses of the Satellites of the Dwarf Planet Haumea = 2003 EL61. AJ 137, 4766 (2009)",
+  "url": "https://arxiv.org/abs/0903.4213"
+ },
+ "lit_ortiz2017": {
+  "title": "Ortiz J. L. et al. The size, shape, density and ring of the dwarf planet Haumea from a stellar occultation. Nature 550, 219 (2017)",
+  "url": "https://arxiv.org/abs/2006.03113"
+ },
+ "lit_ortiz2012": {
+  "title": "Ortiz J. L. et al. Albedo and atmospheric constraints of dwarf planet Makemake from a stellar occultation. Nature 491, 566 (2012)",
+  "url": "https://doi.org/10.1038/nature11597"
+ },
+ "preprint_bamberger2025": {
+  "title": "Bamberger D. A preliminary orbit for the satellite of dwarf planet (136472) Makemake. arXiv:2509.05880 (v3, 2026-02-28). ПРЕПРИНТ, без рецензии",
+  "url": "https://arxiv.org/abs/2509.05880",
+  "preprint": true
+ },
+ "sbdb_ceres": {
+  "title": "JPL SBDB API",
+  "url": "https://ssd-api.jpl.nasa.gov/sbdb.api (sstr, phys-par), ceres"
+ },
+ "sbdb_eris": {
+  "title": "JPL SBDB API",
+  "url": "https://ssd-api.jpl.nasa.gov/sbdb.api (sstr, phys-par), eris"
+ },
+ "sbdb_makemake": {
+  "title": "JPL SBDB API",
+  "url": "https://ssd-api.jpl.nasa.gov/sbdb.api (sstr, phys-par), makemake"
+ },
+ "sbdb_halley": {
+  "title": "JPL SBDB API",
+  "url": "https://ssd-api.jpl.nasa.gov/sbdb.api (sstr, phys-par), halley"
+ },
+ "sbdb_pallas": {
+  "title": "JPL SBDB API",
+  "url": "https://ssd-api.jpl.nasa.gov/sbdb.api (sstr, phys-par), pallas"
+ },
+ "sbdb_vesta": {
+  "title": "JPL SBDB API",
+  "url": "https://ssd-api.jpl.nasa.gov/sbdb.api (sstr, phys-par), vesta"
+ },
+ "sbdb_hygiea": {
+  "title": "JPL SBDB API",
+  "url": "https://ssd-api.jpl.nasa.gov/sbdb.api (sstr, phys-par), hygiea"
+ },
+ "sbdb_haumea": {
+  "title": "JPL SBDB API",
+  "url": "https://ssd-api.jpl.nasa.gov/sbdb.api (sstr, phys-par), haumea"
+ },
+ "naif_naif0012.tls": {
+  "title": "NAIF naif0012.tls",
+  "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/lsk/naif0012.tls",
+  "md5": "25a2fff30b0dedb4d76c06727b1895b1"
+ },
+ "naif_pck00011.tpc": {
+  "title": "NAIF pck00011.tpc",
+  "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/pck/pck00011.tpc",
+  "md5": "3c0bdc01bb4101d6242cf96ece67a586"
+ },
+ "naif_gm_de440.tpc": {
+  "title": "NAIF gm_de440.tpc",
+  "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/pck/gm_de440.tpc",
+  "md5": "a6bb37afab6815c9573a3ec208a8199a"
+ },
+ "naif_de440.bsp": {
+  "title": "NAIF de440.bsp",
+  "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets/de440.bsp",
+  "md5": "c9d581bfd84209dbeee8b1583939b148"
+ },
+ "naif_de442.bsp": {
+  "title": "NAIF de442.bsp",
+  "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets/de442.bsp",
+  "md5": "446656322267e7b819a26cb08a0d8718"
+ },
+ "naif_mar099.bsp": {
+  "title": "NAIF mar099.bsp",
+  "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/satellites/mar099.bsp",
+  "md5": "46f5740f86ec78b978ab96a82f0e42b7"
+ },
+ "naif_jup365.bsp": {
+  "title": "NAIF jup365.bsp",
+  "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/satellites/jup365.bsp",
+  "md5": "9dcee11a333945310db8b76eb695fc9c"
+ },
+ "naif_sat441.bsp": {
+  "title": "NAIF sat441.bsp",
+  "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/satellites/sat441.bsp",
+  "md5": "0d081d7e58504450cf2aa0b151a36b41"
+ },
+ "naif_ura184_part-3.bsp": {
+  "title": "NAIF ura184_part-3.bsp",
+  "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/satellites/ura184_part-3.bsp",
+  "md5": "cf24471fb9037543cdbe168bc0fd4c2e"
+ },
+ "naif_nep098_part-1.bsp": {
+  "title": "NAIF nep098_part-1.bsp",
+  "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/satellites/nep098_part-1.bsp",
+  "md5": "e83c4bf7d362822d35fd6159f4f3a319"
+ },
+ "naif_plu060.bsp": {
+  "title": "NAIF plu060.bsp",
+  "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/satellites/plu060.bsp",
+  "md5": "9e8d40339d583273feb94bbf8c95cae4"
+ }
+}

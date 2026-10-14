@@ -1,0 +1,33 @@
+# Скачанные ядра и исходники карт: большие, в репозиторий не кладём
+data/raw/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Godot
+game/.godot/
+*.import.tmp
+
+# Сборка
+build/
+native/bin/
+native/**/*.obj
+native/**/*.o
+native/**/*.lib
+native/**/*.exp
+native/**/*.pdb
+.sconsign.dblite
+
+# Генерируется конвейером (pipeline/export_eph.py, pipeline/build_textures.py)
+game/data/ephemeris.eph
+game/data/stars.bin
+game/assets/maps/
+game/assets/sky/
+
+# Сборка C++ и GDExtension
+native/build/
+game/bin/*.dll
+game/bin/*.a

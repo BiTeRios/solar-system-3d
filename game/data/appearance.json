@@ -1,0 +1,1409 @@
+{
+ "created_utc": "2026-10-13T14:39:08Z",
+ "layout": "равнопромежуточная: левый край −180° в. д., долгота растёт вправо, верх +90°",
+ "lambert_from_geometric": 1.5,
+ "rgb_wavelengths_um": [
+  0.68,
+  0.55,
+  0.44
+ ],
+ "jpl_registration": {
+  "direct": {
+   "corr": 0.13870664108558817,
+   "shift_deg": -3.5
+  },
+  "mirror": {
+   "corr": 0.061113639213436814,
+   "shift_deg": 77.5
+  }
+ },
+ "bodies": {
+  "sun": {
+   "layers": {},
+   "emissive": true,
+   "note": "поверхность процедурная: грануляция — шум, потемнение к краю и корона — по статьям",
+   "limb_darkening": {
+    "a0": -0.023,
+    "a1": 0.292,
+    "src": "lit_hestroffer1998"
+   },
+   "corona": {
+    "terms": [
+     [
+      2.565,
+      17.0
+     ],
+     [
+      1.425,
+      7.0
+     ],
+     [
+      0.0532,
+      2.5
+     ]
+    ],
+    "unit": 1e-06,
+    "src": "lit_baumbach1937"
+   }
+  },
+  "mercury": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/mercury/color_2048.jpg",
+      "8192": "res://assets/maps/mercury/color_8192.jpg"
+     },
+     "src": "sss",
+     "origin": "8k/mercury.jpg (8192×4096)",
+     "grey": false,
+     "left_lon_deg": -180.0,
+     "lat": "centric",
+     "coverage": 0.9999995103646699,
+     "mean_linear_rgb": [
+      0.2378256354709579,
+      0.23490853149849975,
+      0.23552921106512184
+     ],
+     "encoding": "srgb"
+    },
+    "normal": {
+     "files": {
+      "2048": "res://assets/maps/mercury/normal_2048.png",
+      "8192": "res://assets/maps/mercury/normal_8192.png"
+     },
+     "src": "usgs_mercury_dem",
+     "lat": "centric",
+     "stats": {
+      "2048": {
+       "tilt_mean_deg": 1.5899960139671263,
+       "tilt_p99_deg": 8.526711595395854
+      },
+      "8192": {
+       "tilt_mean_deg": 2.009251225442684,
+       "tilt_p99_deg": 12.766205294501509
+      }
+     },
+     "radius_m": 2439400.0
+    }
+   },
+   "albedo": {
+    "p_v": 0.142,
+    "src": "nasa_fact_mercury",
+    "raw": "Geometric albedo: 0.142",
+    "lambert": 0.21299999999999997,
+    "map_mean_luminance": 0.23557352086775446,
+    "scale": 0.9041763234483949
+   }
+  },
+  "venus": {
+   "layers": {},
+   "uniform_rgb": [
+    1.0,
+    0.9731638418079096,
+    0.9293785310734466
+   ],
+   "note": "облачный слой: цвет по геометрическому альбедо в полосах R, V, B (Mallama et al. 2017)",
+   "albedo": {
+    "p_v": 0.689,
+    "src": "lit_mallama2017",
+    "bands": {
+     "B": 0.658,
+     "V": 0.689,
+     "R": 0.708
+    }
+   }
+  },
+  "earth": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/earth/color_2048.jpg",
+      "8192": "res://assets/maps/earth/color_8192.jpg"
+     },
+     "src": "sss",
+     "origin": "8k/earth_day.jpg (8192×4096)",
+     "grey": false,
+     "left_lon_deg": -180.0,
+     "lat": "geodetic",
+     "coverage": 1.0,
+     "mean_linear_rgb": [
+      0.10292704352512853,
+      0.11685829200747962,
+      0.1906673658659267
+     ],
+     "encoding": "srgb"
+    },
+    "night": {
+     "files": {
+      "2048": "res://assets/maps/earth/night_2048.jpg",
+      "8192": "res://assets/maps/earth/night_8192.jpg"
+     },
+     "src": "sss",
+     "origin": "8k/earth_night.jpg (8192×4096)",
+     "grey": false,
+     "lat": "geodetic",
+     "left_lon_deg": -180.0
+    },
+    "clouds": {
+     "files": {
+      "2048": "res://assets/maps/earth/clouds_2048.jpg",
+      "8192": "res://assets/maps/earth/clouds_8192.jpg"
+     },
+     "src": "sss",
+     "origin": "8k/earth_clouds.jpg (8192×4096)",
+     "grey": true,
+     "lat": "geodetic",
+     "left_lon_deg": -180.0
+    },
+    "normal": {
+     "files": {
+      "2048": "res://assets/maps/earth/normal_2048.png",
+      "8192": "res://assets/maps/earth/normal_8192.png"
+     },
+     "src": "noaa_etopo2022",
+     "lat": "geodetic",
+     "stats": {
+      "2048": {
+       "tilt_mean_deg": 0.1168412142014887,
+       "tilt_p99_deg": 1.617463057320279
+      },
+      "8192": {
+       "tilt_mean_deg": 0.24834391391814586,
+       "tilt_p99_deg": 4.217722754096315
+      }
+     },
+     "radius_m": 6371000.0
+    },
+    "ocean": {
+     "files": {
+      "4096": "res://assets/maps/earth/ocean_4096.png"
+     },
+     "src": [
+      "noaa_etopo2022",
+      "sss"
+     ],
+     "lat": "geodetic",
+     "fraction": 0.6335573196411133
+    }
+   },
+   "albedo": {
+    "p_v": 0.434,
+    "src": "nasa_fact_earth",
+    "raw": "Geometric albedo 0.434",
+    "scale": 1.0,
+    "note": "Blue Marble — отражательная способность поверхности; облака отдельным слоем"
+   },
+   "atmosphere": {
+    "rayleigh_beta_m": [
+     4.853705053587013e-06,
+     1.150165722222422e-05,
+     2.8746276740523444e-05
+    ],
+    "rayleigh_scale_height_m": 8500.0,
+    "rayleigh_tau": [
+     0.0412564929554896,
+     0.09776408638890587,
+     0.24434335229444926
+    ],
+    "mie_extinction_m": 9.999999999999999e-05,
+    "mie_scattering_m": 9.399999999999998e-05,
+    "mie_scale_height_m": 1200.0,
+    "mie_g": 0.7,
+    "mie_ssa": 0.94,
+    "number_density_m3": 2.550129202522388e+25,
+    "src": {
+     "rayleigh": [
+      "lit_bodhaine1999",
+      "nasa_fact_earth"
+     ],
+     "aerosol": [
+      "lit_kinne2019",
+      "lit_bruneton2008"
+     ]
+    },
+    "rgb_um": [
+     0.68,
+     0.55,
+     0.44
+    ],
+    "top_m": 102000.0
+   }
+  },
+  "moon": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/moon/color_2048.jpg",
+      "8192": "res://assets/maps/moon/color_8192.jpg"
+     },
+     "src": "sss",
+     "origin": "8k/moon.jpg (8192×4096)",
+     "grey": false,
+     "left_lon_deg": -180.0,
+     "lat": "centric",
+     "coverage": 0.9999997953230054,
+     "mean_linear_rgb": [
+      0.33441096688843125,
+      0.31705590519691096,
+      0.31563166194289355
+     ],
+     "encoding": "srgb"
+    },
+    "normal": {
+     "files": {
+      "2048": "res://assets/maps/moon/normal_2048.png",
+      "5760": "res://assets/maps/moon/normal_5760.png"
+     },
+     "src": "pds_lola",
+     "lat": "centric",
+     "stats": {
+      "2048": {
+       "tilt_mean_deg": 4.138697282932676,
+       "tilt_p99_deg": 17.208637729396752
+      },
+      "5760": {
+       "tilt_mean_deg": 5.480734377092071,
+       "tilt_p99_deg": 23.527527642491517
+      }
+     },
+     "radius_m": 1737400.0
+    }
+   },
+   "albedo": {
+    "p_v": 0.12,
+    "src": "nasa_fact_moon",
+    "raw": "Geometric albedo: 0.12",
+    "lambert": 0.18,
+    "map_mean_luminance": 0.32064276094958805,
+    "scale": 0.5613724116737502
+   }
+  },
+  "mars": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/mars/color_2048.jpg",
+      "8192": "res://assets/maps/mars/color_8192.jpg"
+     },
+     "src": "sss",
+     "origin": "8k/mars.jpg (8192×4096)",
+     "grey": false,
+     "left_lon_deg": -180.0,
+     "lat": "centric",
+     "coverage": 1.0,
+     "mean_linear_rgb": [
+      0.4760767852533586,
+      0.10873222280786916,
+      0.05293499278394856
+     ],
+     "encoding": "srgb"
+    },
+    "normal": {
+     "files": {
+      "2048": "res://assets/maps/mars/normal_2048.png",
+      "5760": "res://assets/maps/mars/normal_5760.png"
+     },
+     "src": "pds_mola",
+     "lat": "centric",
+     "stats": {
+      "2048": {
+       "tilt_mean_deg": 0.7946320970051521,
+       "tilt_p99_deg": 6.162016055026863
+      },
+      "5760": {
+       "tilt_mean_deg": 1.240678482215252,
+       "tilt_p99_deg": 10.77494010475449
+      }
+     },
+     "radius_m": 3396000.0
+    }
+   },
+   "albedo": {
+    "p_v": 0.17,
+    "src": "nasa_fact_mars",
+    "raw": "Geometric albedo: 0.170",
+    "lambert": 0.255,
+    "map_mean_luminance": 0.18280111677605315,
+    "scale": 1.394958655052401
+   },
+   "atmosphere_note": "не рисуется: для пыли нет данных, для CO₂ — формулы показателя преломления (см. docs/sources.md)"
+  },
+  "phobos": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/phobos/color_2048.jpg",
+      "5760": "res://assets/maps/phobos/color_5760.jpg"
+     },
+     "src": "usgs_mosaic",
+     "origin": "Phobos_ME_SRC_Mosaic_Global_16ppd.tif; метка PDS3: EAST, CENTER 0; левый край -180.000°",
+     "grey": true,
+     "left_lon_deg": -179.99999993702627,
+     "lat": "centric",
+     "coverage": 0.9969757630881425,
+     "mean_linear_rgb": [
+      0.5898252102289072,
+      0.5898252102289072,
+      0.5898252102289072
+     ],
+     "encoding": "linear",
+     "fill_note": "области без снимков залиты средним цветом снятой части"
+    }
+   },
+   "albedo": {
+    "scale": 1.0
+   },
+   "no_albedo": "альбедо нет в таблицах NASA: яркость как в исходной карте"
+  },
+  "deimos": {
+   "layers": {
+    "color": {
+     "files": {
+      "1440": "res://assets/maps/deimos/color_1440.jpg"
+     },
+     "src": "jpl_tmaps",
+     "origin": "mar2kuu2.tif; левый край −180° (как у серии, см. registration_jpl)",
+     "grey": true,
+     "left_lon_deg": -180.0,
+     "lat": "centric",
+     "coverage": 0.9999993198544428,
+     "mean_linear_rgb": [
+      0.18592269373490994,
+      0.18592269373490994,
+      0.18592269373490994
+     ],
+     "encoding": "srgb"
+    }
+   },
+   "albedo": {
+    "scale": 1.0
+   },
+   "no_albedo": "альбедо нет в таблицах NASA: яркость как в исходной карте"
+  },
+  "jupiter": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/jupiter/color_2048.jpg",
+      "4096": "res://assets/maps/jupiter/color_4096.jpg"
+     },
+     "src": "sss",
+     "origin": "8k/jupiter.jpg (4096×2048)",
+     "grey": false,
+     "left_lon_deg": -180.0,
+     "lat": "centric",
+     "coverage": 1.0,
+     "mean_linear_rgb": [
+      0.44952261794191584,
+      0.40273933580682625,
+      0.3527960852362467
+     ],
+     "encoding": "srgb"
+    }
+   },
+   "albedo": {
+    "p_v": 0.538,
+    "src": "nasa_fact_jupiter",
+    "raw": "Geometric albedo: 0.538",
+    "lambert": 0.807,
+    "map_mean_luminance": 0.4090795588975505,
+    "scale": 1.9727213996583592
+   }
+  },
+  "io": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/io/color_2048.jpg",
+      "8192": "res://assets/maps/io/color_8192.jpg"
+     },
+     "src": "usgs_mosaic",
+     "origin": "Io_GalileoSSI-Voyager_Global_Mosaic_ClrMerge_1km.tif; метка PDS3: WEST, CENTER 0; левый край -180.016°",
+     "grey": false,
+     "left_lon_deg": -180.01572739187418,
+     "lat": "centric",
+     "coverage": 0.9999998529314412,
+     "mean_linear_rgb": [
+      0.36036144744050064,
+      0.24887898098345848,
+      0.11470382583161493
+     ],
+     "encoding": "srgb"
+    }
+   },
+   "albedo": {
+    "p_v": 0.62,
+    "src": "nasa_fact_joviansat",
+    "raw": "Io (I): Visual geometric albedo 0.62",
+    "lambert": 0.9299999999999999,
+    "map_mean_luminance": 0.26289270715026253,
+    "scale": 3.537564849482251
+   }
+  },
+  "europa": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/europa/color_2048.jpg",
+      "8192": "res://assets/maps/europa/color_8192.jpg"
+     },
+     "src": "usgs_mosaic",
+     "origin": "Europa_Voyager_GalileoSSI_global_mosaic_500m.tif; метка PDS3: WEST, CENTER 180; левый край -360.009°",
+     "grey": true,
+     "left_lon_deg": -360.00916917120924,
+     "lat": "centric",
+     "coverage": 0.9951703531541863,
+     "mean_linear_rgb": [
+      0.5869668770195836,
+      0.5869668770195836,
+      0.5869668770195836
+     ],
+     "encoding": "linear",
+     "fill_note": "области без снимков залиты средним цветом снятой части"
+    }
+   },
+   "albedo": {
+    "p_v": 0.68,
+    "src": "nasa_fact_joviansat",
+    "raw": "Europa (II): Visual geometric albedo 0.68",
+    "lambert": 1.0,
+    "map_mean_luminance": 0.5869668770195835,
+    "scale": 1.70367364693159
+   }
+  },
+  "ganymede": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/ganymede/color_2048.jpg",
+      "8192": "res://assets/maps/ganymede/color_8192.jpg"
+     },
+     "src": "usgs_mosaic",
+     "origin": "Ganymede_Voyager_GalileoSSI_Global_ClrMosaic_1435m.tif; метка PDS3: EAST, CENTER 180; левый край -0.000°",
+     "grey": false,
+     "left_lon_deg": -5.7897864280676e-10,
+     "lat": "centric",
+     "coverage": 0.9959130471361296,
+     "mean_linear_rgb": [
+      0.19368093660487248,
+      0.17926739805732955,
+      0.14686718522697415
+     ],
+     "encoding": "srgb",
+     "fill_note": "области без снимков залиты средним цветом снятой части"
+    }
+   },
+   "albedo": {
+    "p_v": 0.44,
+    "src": "nasa_fact_joviansat",
+    "raw": "Ganymede (III): Visual geometric albedo 0.44",
+    "lambert": 0.66,
+    "map_mean_luminance": 0.1799924209861855,
+    "scale": 3.6668210604859595
+   }
+  },
+  "callisto": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/callisto/color_2048.jpg",
+      "8192": "res://assets/maps/callisto/color_8192.jpg"
+     },
+     "src": "usgs_mosaic",
+     "origin": "Callisto_Voyager_GalileoSSI_global_mosaic_1km.tif; метка PDS3: WEST, CENTER 180; левый край -360.000°",
+     "grey": true,
+     "left_lon_deg": -360.000000000001,
+     "lat": "centric",
+     "coverage": 0.9914402854914887,
+     "mean_linear_rgb": [
+      0.2334928750952843,
+      0.2334928750952843,
+      0.2334928750952843
+     ],
+     "encoding": "linear",
+     "fill_note": "области без снимков залиты средним цветом снятой части"
+    }
+   },
+   "albedo": {
+    "p_v": 0.19,
+    "src": "nasa_fact_joviansat",
+    "raw": "Callisto (IV): Visual geometric albedo 0.19",
+    "lambert": 0.28500000000000003,
+    "map_mean_luminance": 0.23349287509528427,
+    "scale": 1.2205939897896096
+   }
+  },
+  "saturn": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/saturn/color_2048.jpg",
+      "4096": "res://assets/maps/saturn/color_4096.jpg"
+     },
+     "src": "sss",
+     "origin": "8k/saturn.jpg (4096×2048)",
+     "grey": false,
+     "left_lon_deg": -180.0,
+     "lat": "centric",
+     "coverage": 1.0,
+     "mean_linear_rgb": [
+      0.7390672825128517,
+      0.5995648400598746,
+      0.39134771204423524
+     ],
+     "encoding": "srgb"
+    }
+   },
+   "albedo": {
+    "p_v": 0.499,
+    "src": "nasa_fact_saturn",
+    "raw": "Geometric albedo: 0.499",
+    "lambert": 0.7484999999999999,
+    "map_mean_luminance": 0.6141897826826485,
+    "scale": 1.2186786903727271
+   }
+  },
+  "mimas": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/mimas/color_2048.jpg",
+      "5760": "res://assets/maps/mimas/color_5760.jpg"
+     },
+     "src": "usgs_mosaic",
+     "origin": "Cassini_DLR_Mimas.zip/Cassini_DLR/MI_170630_DLR_basemap_degrees.tif; левый край -180.000°",
+     "grey": true,
+     "left_lon_deg": -180.0,
+     "lat": "centric",
+     "coverage": 0.9999641229367168,
+     "mean_linear_rgb": [
+      0.44282222899516077,
+      0.44282222899516077,
+      0.44282222899516077
+     ],
+     "encoding": "linear"
+    }
+   },
+   "albedo": {
+    "p_v": 0.6,
+    "src": "nasa_fact_saturniansat",
+    "raw": "Mimas (I): Visual geometric albedo 0.6",
+    "lambert": 0.8999999999999999,
+    "map_mean_luminance": 0.4428222289951607,
+    "scale": 2.0324182958074477
+   }
+  },
+  "enceladus": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/enceladus/color_2048.jpg",
+      "8192": "res://assets/maps/enceladus/color_8192.jpg"
+     },
+     "src": "usgs_mosaic",
+     "origin": "Enceladus_Cassini_mosaic_global_110m.tif; метка PDS3: WEST, CENTER 180; левый край -180.000°",
+     "grey": true,
+     "left_lon_deg": -180.0,
+     "lat": "centric",
+     "coverage": 0.9996574734652587,
+     "mean_linear_rgb": [
+      0.4047255022853465,
+      0.4047255022853465,
+      0.4047255022853465
+     ],
+     "encoding": "linear"
+    }
+   },
+   "albedo": {
+    "p_v": 1.0,
+    "src": "nasa_fact_saturniansat",
+    "raw": "Enceladus (II): Visual geometric albedo 1.0",
+    "lambert": 1.0,
+    "map_mean_luminance": 0.4047255022853465,
+    "scale": 2.4708104489421645
+   }
+  },
+  "tethys": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/tethys/color_2048.jpg",
+      "8192": "res://assets/maps/tethys/color_8192.jpg"
+     },
+     "src": "usgs_mosaic",
+     "origin": "Tethys_Cassini_mosaic_global_293m.tif; метка PDS3: EAST, CENTER 0; левый край -180.000°",
+     "grey": true,
+     "left_lon_deg": -179.9999999999747,
+     "lat": "centric",
+     "coverage": 0.9995585434325555,
+     "mean_linear_rgb": [
+      0.4670777712444489,
+      0.4670777712444489,
+      0.4670777712444489
+     ],
+     "encoding": "linear"
+    }
+   },
+   "albedo": {
+    "p_v": 0.8,
+    "src": "nasa_fact_saturniansat",
+    "raw": "Tethys (III): Visual geometric albedo 0.8",
+    "lambert": 1.0,
+    "map_mean_luminance": 0.46707777124444894,
+    "scale": 2.1409710792608925
+   }
+  },
+  "dione": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/dione/color_2048.jpg",
+      "8192": "res://assets/maps/dione/color_8192.jpg"
+     },
+     "src": "usgs_mosaic",
+     "origin": "Dione_Cassini_Voyager_mosaic_global_154m.tif; метка PDS3: EAST, CENTER 0; левый край -180.000°",
+     "grey": true,
+     "left_lon_deg": -179.99999999999008,
+     "lat": "centric",
+     "coverage": 0.9985620128241399,
+     "mean_linear_rgb": [
+      0.4905047802370302,
+      0.4905047802370302,
+      0.4905047802370302
+     ],
+     "encoding": "linear",
+     "fill_note": "области без снимков залиты средним цветом снятой части"
+    }
+   },
+   "albedo": {
+    "p_v": 0.7,
+    "src": "nasa_fact_saturniansat",
+    "raw": "Dione (IV): Visual geometric albedo 0.7",
+    "lambert": 1.0,
+    "map_mean_luminance": 0.4905047802370302,
+    "scale": 2.038716115094256
+   }
+  },
+  "rhea": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/rhea/color_2048.jpg",
+      "8192": "res://assets/maps/rhea/color_8192.jpg"
+     },
+     "src": "usgs_mosaic",
+     "origin": "Rhea_Cassini_Voyager_mosaic_global_417m.tif; метка PDS3: WEST, CENTER 180; левый край -180.000°",
+     "grey": true,
+     "left_lon_deg": -180.0,
+     "lat": "centric",
+     "coverage": 0.999973233742214,
+     "mean_linear_rgb": [
+      0.4296969790805813,
+      0.4296969790805813,
+      0.4296969790805813
+     ],
+     "encoding": "linear"
+    }
+   },
+   "albedo": {
+    "p_v": 0.7,
+    "src": "nasa_fact_saturniansat",
+    "raw": "Rhea (V): Visual geometric albedo 0.7",
+    "lambert": 1.0,
+    "map_mean_luminance": 0.4296969790805813,
+    "scale": 2.3272213878247197
+   }
+  },
+  "titan": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/titan/color_2048.jpg",
+      "4040": "res://assets/maps/titan/color_4040.jpg"
+     },
+     "src": "usgs_mosaic",
+     "origin": "Titan_ISS_P19658_Mosaic_Global_4km.tif; метка PDS3: WEST, CENTER 180; левый край -360.000°",
+     "grey": true,
+     "left_lon_deg": -359.9999999992435,
+     "lat": "centric",
+     "coverage": 0.9997131377554933,
+     "mean_linear_rgb": [
+      0.4884952721613967,
+      0.4884952721613967,
+      0.4884952721613967
+     ],
+     "encoding": "linear"
+    }
+   },
+   "albedo": {
+    "p_v": 0.22,
+    "src": "nasa_fact_saturniansat",
+    "raw": "Titan (VI): Visual geometric albedo 0.22",
+    "lambert": 0.33,
+    "map_mean_luminance": 0.48849527216139677,
+    "scale": 0.6755438973644138
+   },
+   "atmosphere_note": "дымка не рисуется: нет альбедо в красной полосе; карта — ИК-снимок поверхности (938 нм)"
+  },
+  "iapetus": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/iapetus/color_2048.jpg",
+      "5760": "res://assets/maps/iapetus/color_5760.jpg"
+     },
+     "src": "usgs_mosaic",
+     "origin": "Iapetus_Cassini_Voyager_mosaic_global_783m.tif; метка PDS3: WEST, CENTER 0; левый край -180.000°",
+     "grey": true,
+     "left_lon_deg": -180.0000000000013,
+     "lat": "centric",
+     "coverage": 0.9999790565438381,
+     "mean_linear_rgb": [
+      0.4414607729239165,
+      0.4414607729239165,
+      0.4414607729239165
+     ],
+     "encoding": "linear"
+    }
+   },
+   "albedo": {
+    "p_v": 0.275,
+    "src": "nasa_fact_saturniansat",
+    "raw": "Iapetus (VIII): Visual geometric albedo 0.05 / 0.5",
+    "lambert": 0.41250000000000003,
+    "map_mean_luminance": 0.44146077292391644,
+    "scale": 0.9343978566156598
+   }
+  },
+  "uranus": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/uranus/color_2048.jpg"
+     },
+     "src": "sss",
+     "origin": "2k/uranus.jpg (2048×1024)",
+     "grey": false,
+     "left_lon_deg": -180.0,
+     "lat": "centric",
+     "coverage": 1.0,
+     "mean_linear_rgb": [
+      0.34279520022591553,
+      0.6192656682717591,
+      0.6672439117123067
+     ],
+     "encoding": "srgb"
+    }
+   },
+   "albedo": {
+    "p_v": 0.488,
+    "src": "nasa_fact_uranus",
+    "raw": "Geometric albedo: 0.488",
+    "lambert": 0.732,
+    "map_mean_luminance": 0.5639520759416203,
+    "scale": 1.297982632261426
+   }
+  },
+  "miranda": {
+   "layers": {
+    "color": {
+     "files": {
+      "1440": "res://assets/maps/miranda/color_1440.jpg"
+     },
+     "src": "jpl_tmaps",
+     "origin": "ura5vuu2.tif; левый край −180° (как у серии, см. registration_jpl)",
+     "grey": true,
+     "left_lon_deg": -180.0,
+     "lat": "centric",
+     "coverage": 0.39853386204616215,
+     "mean_linear_rgb": [
+      0.1562563484664279,
+      0.1562563484664279,
+      0.1562563484664279
+     ],
+     "encoding": "srgb",
+     "fill_note": "области без снимков залиты средним цветом снятой части"
+    }
+   },
+   "albedo": {
+    "p_v": 0.32,
+    "src": "nasa_fact_uraniansat",
+    "raw": "Miranda (UV): Visual geometric albedo 0.32",
+    "lambert": 0.48,
+    "map_mean_luminance": 0.15625634846642789,
+    "scale": 3.0718751891423426
+   }
+  },
+  "ariel": {
+   "layers": {
+    "color": {
+     "files": {
+      "1440": "res://assets/maps/ariel/color_1440.jpg"
+     },
+     "src": "jpl_tmaps",
+     "origin": "ura1vuu2.tif; левый край −180° (как у серии, см. registration_jpl)",
+     "grey": true,
+     "left_lon_deg": -180.0,
+     "lat": "centric",
+     "coverage": 0.33784532884670176,
+     "mean_linear_rgb": [
+      0.15111074119389342,
+      0.15111074119389342,
+      0.15111074119389342
+     ],
+     "encoding": "srgb",
+     "fill_note": "области без снимков залиты средним цветом снятой части"
+    }
+   },
+   "albedo": {
+    "p_v": 0.39,
+    "src": "nasa_fact_uraniansat",
+    "raw": "Ariel (UI): Visual geometric albedo 0.39",
+    "lambert": 0.585,
+    "map_mean_luminance": 0.15111074119389342,
+    "scale": 3.8713330063636837
+   }
+  },
+  "umbriel": {
+   "layers": {
+    "color": {
+     "files": {
+      "1440": "res://assets/maps/umbriel/color_1440.jpg"
+     },
+     "src": "jpl_tmaps",
+     "origin": "ura2vuu2.tif; левый край −180° (как у серии, см. registration_jpl)",
+     "grey": true,
+     "left_lon_deg": -180.0,
+     "lat": "centric",
+     "coverage": 0.3688748613340853,
+     "mean_linear_rgb": [
+      0.21304862479968195,
+      0.21304862479968195,
+      0.21304862479968195
+     ],
+     "encoding": "srgb",
+     "fill_note": "области без снимков залиты средним цветом снятой части"
+    }
+   },
+   "albedo": {
+    "p_v": 0.21,
+    "src": "nasa_fact_uraniansat",
+    "raw": "Umbriel (UII): Visual geometric albedo 0.21",
+    "lambert": 0.315,
+    "map_mean_luminance": 0.21304862479968195,
+    "scale": 1.478535711254543
+   }
+  },
+  "titania": {
+   "layers": {
+    "color": {
+     "files": {
+      "1440": "res://assets/maps/titania/color_1440.jpg"
+     },
+     "src": "jpl_tmaps",
+     "origin": "ura3vuu2.tif; левый край −180° (как у серии, см. registration_jpl)",
+     "grey": true,
+     "left_lon_deg": -180.0,
+     "lat": "centric",
+     "coverage": 0.31832114125800265,
+     "mean_linear_rgb": [
+      0.2771031086706228,
+      0.2771031086706228,
+      0.2771031086706228
+     ],
+     "encoding": "srgb",
+     "fill_note": "области без снимков залиты средним цветом снятой части"
+    }
+   },
+   "albedo": {
+    "p_v": 0.27,
+    "src": "nasa_fact_uraniansat",
+    "raw": "Titania (UIII): Visual geometric albedo 0.27",
+    "lambert": 0.405,
+    "map_mean_luminance": 0.2771031086706228,
+    "scale": 1.4615498250559187
+   }
+  },
+  "oberon": {
+   "layers": {
+    "color": {
+     "files": {
+      "1440": "res://assets/maps/oberon/color_1440.jpg"
+     },
+     "src": "jpl_tmaps",
+     "origin": "ura4vuu2.tif; левый край −180° (как у серии, см. registration_jpl)",
+     "grey": true,
+     "left_lon_deg": -180.0,
+     "lat": "centric",
+     "coverage": 0.34088476726283945,
+     "mean_linear_rgb": [
+      0.2211501340199651,
+      0.2211501340199651,
+      0.2211501340199651
+     ],
+     "encoding": "srgb",
+     "fill_note": "области без снимков залиты средним цветом снятой части"
+    }
+   },
+   "albedo": {
+    "p_v": 0.23,
+    "src": "nasa_fact_uraniansat",
+    "raw": "Oberon (UIV): Visual geometric albedo 0.23",
+    "lambert": 0.34500000000000003,
+    "map_mean_luminance": 0.22115013401996508,
+    "scale": 1.5600261855091346
+   }
+  },
+  "neptune": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/neptune/color_2048.jpg"
+     },
+     "src": "sss",
+     "origin": "2k/neptune.jpg (2048×1024)",
+     "grey": false,
+     "left_lon_deg": -180.0,
+     "lat": "centric",
+     "coverage": 1.0,
+     "mean_linear_rgb": [
+      0.04125254539607155,
+      0.11177009769989713,
+      0.47264206427420014
+     ],
+     "encoding": "srgb"
+    }
+   },
+   "albedo": {
+    "p_v": 0.442,
+    "src": "nasa_fact_neptune",
+    "raw": "Geometric albedo: 0.442",
+    "lambert": 0.663,
+    "map_mean_luminance": 0.12283302206676848,
+    "scale": 5.39757134396329
+   }
+  },
+  "triton": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/triton/color_2048.jpg",
+      "8192": "res://assets/maps/triton/color_8192.jpg"
+     },
+     "src": "usgs_mosaic",
+     "origin": "Triton_Voyager2_ClrMosaic_GlobalFill_600m.tif; метка PDS3: EAST, CENTER 0; левый край -179.989°",
+     "grey": false,
+     "left_lon_deg": -179.98939379032393,
+     "lat": "centric",
+     "coverage": 0.6696035580259678,
+     "mean_linear_rgb": [
+      0.3248638959304339,
+      0.3481258454676062,
+      0.24718264385085859
+     ],
+     "encoding": "srgb",
+     "fill_note": "области без снимков залиты средним цветом снятой части"
+    }
+   },
+   "albedo": {
+    "p_v": 0.72,
+    "src": "nasa_fact_neptuniansat",
+    "raw": "Triton (NI): Visual geometric albedo 0.72",
+    "lambert": 1.0,
+    "map_mean_luminance": 0.3358922558392742,
+    "scale": 2.9771451488256524
+   }
+  },
+  "pluto": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/pluto/color_2048.jpg",
+      "8192": "res://assets/maps/pluto/color_8192.jpg"
+     },
+     "src": "usgs_mosaic",
+     "origin": "Pluto_NewHorizons_Global_Mosaic_300m_Jul2017_8bit.tif; метка PDS3: EAST, CENTER 180; левый край +0.000°",
+     "grey": true,
+     "left_lon_deg": 0.0,
+     "lat": "centric",
+     "coverage": 0.7687326400516332,
+     "mean_linear_rgb": [
+      0.38737965451296036,
+      0.38737965451296036,
+      0.38737965451296036
+     ],
+     "encoding": "linear",
+     "fill_note": "области без снимков залиты средним цветом снятой части"
+    }
+   },
+   "albedo": {
+    "p_v": 0.52,
+    "src": "nasa_fact_pluto",
+    "raw": "Geometric albedo: 0.52",
+    "lambert": 0.78,
+    "map_mean_luminance": 0.38737965451296036,
+    "scale": 2.013528565357074
+   }
+  },
+  "charon": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/charon/color_2048.jpg",
+      "8192": "res://assets/maps/charon/color_8192.jpg"
+     },
+     "src": "usgs_mosaic",
+     "origin": "Charon_NewHorizons_Global_Mosaic_300m_Jul2017_8bit.tif; метка PDS3: EAST, CENTER 0; левый край -180.000°",
+     "grey": true,
+     "left_lon_deg": -180.0,
+     "lat": "centric",
+     "coverage": 0.7400168592061382,
+     "mean_linear_rgb": [
+      0.5154823693708965,
+      0.5154823693708965,
+      0.5154823693708965
+     ],
+     "encoding": "linear",
+     "fill_note": "области без снимков залиты средним цветом снятой части"
+    }
+   },
+   "albedo": {
+    "scale": 1.0
+   },
+   "no_albedo": "альбедо нет в таблицах NASA: яркость как в исходной карте"
+  },
+  "ceres": {
+   "layers": {
+    "color": {
+     "files": {
+      "2048": "res://assets/maps/ceres/color_2048.jpg",
+      "7380": "res://assets/maps/ceres/color_7380.jpg"
+     },
+     "src": "usgs_mosaic",
+     "origin": "Ceres_Dawn_FC_DLR_global_20ppd_Oct2015.tif; метка PDS3: EAST, CENTER 180; левый край +0.000°",
+     "grey": true,
+     "left_lon_deg": 0.0,
+     "lat": "centric",
+     "coverage": 0.9962772519760913,
+     "mean_linear_rgb": [
+      0.5154028132151215,
+      0.5154028132151215,
+      0.5154028132151215
+     ],
+     "encoding": "linear",
+     "fill_note": "области без снимков залиты средним цветом снятой части"
+    }
+   },
+   "albedo": {
+    "p_v": 0.09,
+    "src": "sbdb_ceres",
+    "raw": "Li et al. (2006) Icarus v182:pp143-160",
+    "lambert": 0.135,
+    "map_mean_luminance": 0.5154028132151215,
+    "scale": 0.2619310499255133
+   }
+  },
+  "eris": {
+   "layers": {},
+   "no_map": "глобальных снимков поверхности нет (только наземные наблюдения)",
+   "uniform_rgb": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "albedo": {
+    "p_v": 0.96,
+    "src": "lit_sicardy2011",
+    "raw": "аннотация: visible geometric albedo p(V) = 0.96 (+0.09, −0.04)",
+    "lambert": 1.0
+   }
+  },
+  "haumea": {
+   "layers": {},
+   "no_map": "глобальных снимков поверхности нет (только наземные наблюдения)",
+   "uniform_rgb": [
+    0.765,
+    0.765,
+    0.765
+   ],
+   "albedo": {
+    "p_v": 0.51,
+    "src": "lit_ortiz2017",
+    "raw": "аннотация: «a geometric albedo of 0.51 ± 0.02»",
+    "lambert": 0.765
+   }
+  },
+  "makemake": {
+   "layers": {},
+   "no_map": "глобальных снимков поверхности нет (только наземные наблюдения)",
+   "uniform_rgb": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "albedo": {
+    "p_v": 0.77,
+    "src": "lit_ortiz2012",
+    "raw": "аннотация: V-band geometric albedo 0.77 ± 0.03",
+    "lambert": 1.0
+   }
+  },
+  "halley": {
+   "layers": {},
+   "no_map": "ядро снято вблизи только «Джотто» и «Вегами» в 1986 году, глобальной карты нет",
+   "uniform_rgb": [
+    0.06,
+    0.06,
+    0.06
+   ],
+   "albedo": {
+    "p_v": 0.04,
+    "src": "sbdb_halley",
+    "raw": "Earth, Moon, and Planets, v. 89, Issue 1, p. 117-134 (2002)",
+    "lambert": 0.06
+   }
+  }
+ },
+ "sources": {
+  "sss": {
+   "title": "Solar System Scope, текстуры планет (Textures by Solar System Scope)",
+   "url": "https://www.solarsystemscope.com/textures/",
+   "license": "CC BY 4.0",
+   "note": "копии из справочного проекта D:/work/Vanya/space/godot/assets/textures (разрешено 11.10.2026)"
+  },
+  "usgs_mosaic": {
+   "title": "USGS Astrogeology Science Center, глобальные мозаики (planetarymaps.usgs.gov/mosaic)",
+   "url": "https://planetarymaps.usgs.gov/mosaic/",
+   "license": "общественное достояние (USGS/NASA)"
+  },
+  "jpl_tmaps": {
+   "title": "JPL Solar System Simulator, texture maps (Caltech/JPL/USGS, Voyager/Viking)",
+   "url": "https://maps.jpl.nasa.gov/tmaps/",
+   "license": "правила JPL: с указанием NASA/JPL-Caltech",
+   "note": "без геопривязки; раскладка проверена по карте Фобоса той же серии (mar1kuu2.tif)"
+  },
+  "pds_lola": {
+   "title": "LRO LOLA GDR, LDEM_16 (PDS Geosciences Node)",
+   "license": "общественное достояние (NASA)",
+   "url": "https://pds-geosciences.wustl.edu/lro/lro-l-lola-3-rdr-v1/lrolol_1xxx/data/lola_gdr/cylindrical/img/"
+  },
+  "pds_mola": {
+   "title": "MGS MOLA MEGDR, megt90n000eb, 16 px/° (PDS Geosciences Node)",
+   "license": "общественное достояние (NASA)",
+   "url": "https://pds-geosciences.wustl.edu/mgs/mgs-m-mola-5-megdr-l3-v1/mgsl_300x/meg016/"
+  },
+  "usgs_mercury_dem": {
+   "title": "USGS Mercury MESSENGER Global DEM 665 m v2",
+   "license": "общественное достояние (USGS/NASA)",
+   "url": "https://planetarymaps.usgs.gov/mosaic/Mercury_Messenger_USGS_DEM_Global_665m_v2_32bit_clon0.tif"
+  },
+  "noaa_etopo2022": {
+   "title": "NOAA NCEI ETOPO 2022, 60″, ice surface (doi:10.25921/fd45-gt74)",
+   "license": "общественное достояние (NOAA)",
+   "url": "https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO2022/data/60s/60s_surface_elev_gtif/"
+  },
+  "lit_mallama2017": {
+   "title": "Mallama A., Krobusek B., Pavlov H. Comprehensive wide-band magnitudes and albedos for the planets, with applications to exo-planets and Planet Nine. Icarus 282, 19 (2017)",
+   "url": "https://arxiv.org/abs/1609.05048",
+   "doi": "10.1016/j.icarus.2016.09.023"
+  },
+  "lit_hestroffer1998": {
+   "title": "Hestroffer D., Magnan C. Wavelength dependency of the Solar limb darkening. A&A 333, 338 (1998); подгонка по данным Neckel & Labs 1994 и Pierce & Slaughter 1977. Формула приведена по arXiv:2407.21583, разд. 3.2.1",
+   "url": "https://arxiv.org/abs/2407.21583"
+  },
+  "lit_baumbach1937": {
+   "title": "Baumbach S. Astron. Nachr. 263, 121 (1937): яркость короны в 10⁻⁶ яркости центра диска. Формула приведена по Turyshev & Toth, MNRAS 515, 6122 (2022), ур. (9); единица 10⁻⁶ центральной яркости — по Allen, MNRAS 107, 426 (1947)",
+   "url": "https://arxiv.org/abs/2204.04866"
+  },
+  "lit_kinne2019": {
+   "title": "Kinne S. Aerosol radiative effects with MACv2. Atmos. Chem. Phys. 19, 10919 (2019)",
+   "url": "https://doi.org/10.5194/acp-19-10919-2019"
+  },
+  "lit_bruneton2008": {
+   "title": "Bruneton E., Neyret F. Precomputed Atmospheric Scattering. Computer Graphics Forum 27(4), 1079 (2008); шкала высот аэрозоля 1,2 км сверена по реализации автора (BSD): github.com/ebruneton/precomputed_atmospheric_scattering, demo.cc, kMieScaleHeight",
+   "url": "https://doi.org/10.1111/j.1467-8659.2008.01245.x"
+  },
+  "lit_bodhaine1999": {
+   "title": "Bodhaine B. A., Wood N. B., Dutton E. G., Slusser J. R. On Rayleigh optical depth calculations. J. Atmos. Oceanic Technol. 16, 1854 (1999): ур. (2), (4)–(6), Ns",
+   "url": "https://doi.org/10.1175/1520-0426(1999)016<1854:ORODC>2.0.CO;2"
+  }
+ },
+ "features": [
+  {
+   "body": "io",
+   "feature": "Пеле (кольцо выбросов)",
+   "lat": -18.7,
+   "lon_e": 104.69999999999999,
+   "expect": "red",
+   "center": 106.40264863341787,
+   "around": 134.7282412574176,
+   "red_center": 51.56828885400313,
+   "red_around": 99.6860192427766
+  },
+  {
+   "body": "europa",
+   "feature": "кратер Пвилл",
+   "lat": -25.2,
+   "lon_e": 88.60000000000002,
+   "expect": "bright",
+   "center": 163.2267842048062,
+   "around": 148.81777867365452,
+   "red_center": 0.0,
+   "red_around": 0.0
+  },
+  {
+   "body": "callisto",
+   "feature": "Вальхалла (центр)",
+   "lat": 14.7,
+   "lon_e": -56.0,
+   "expect": "bright",
+   "center": 85.96099504890714,
+   "around": 77.20112978795581,
+   "red_center": 0.0,
+   "red_around": 0.0
+  },
+  {
+   "body": "ganymede",
+   "feature": "область Галилея",
+   "lat": 35.0,
+   "lon_e": -145.0,
+   "expect": "dark",
+   "center": 88.74769552791531,
+   "around": 83.43590903355113,
+   "red_center": 22.344885883347416,
+   "red_around": 24.415504348552858
+  },
+  {
+   "body": "iapetus",
+   "feature": "область Кассини",
+   "lat": 0.0,
+   "lon_e": -90.0,
+   "expect": "dark",
+   "center": 84.2792899408284,
+   "around": 82.59145388728759,
+   "red_center": 0.0,
+   "red_around": 0.0
+  },
+  {
+   "body": "rhea",
+   "feature": "кратер Инктоми (лучи)",
+   "lat": -14.1,
+   "lon_e": -112.1,
+   "expect": "bright",
+   "center": 143.15746890472164,
+   "around": 135.97374152536122,
+   "red_center": 0.0,
+   "red_around": 0.0
+  },
+  {
+   "body": "mimas",
+   "feature": "кратер Гершель",
+   "lat": -1.4,
+   "lon_e": -111.8,
+   "expect": "crater",
+   "center": 83.42035502958579,
+   "around": 101.20385089430421,
+   "red_center": 0.0,
+   "red_around": 0.0
+  },
+  {
+   "body": "tethys",
+   "feature": "кратер Одиссей",
+   "lat": 32.8,
+   "lon_e": -128.9,
+   "expect": "crater",
+   "center": 119.90278951817413,
+   "around": 123.76242004709908,
+   "red_center": 0.0,
+   "red_around": 0.0
+  },
+  {
+   "body": "pluto",
+   "feature": "равнина Спутника",
+   "lat": 20.0,
+   "lon_e": 175.0,
+   "expect": "bright",
+   "center": 163.81499818862457,
+   "around": 161.92420391246847,
+   "red_center": 0.0,
+   "red_around": 0.0
+  },
+  {
+   "body": "ceres",
+   "feature": "кратер Оккатор (яркие пятна)",
+   "lat": 19.8,
+   "lon_e": -120.69999999999999,
+   "expect": "bright",
+   "center": 174.14356220060967,
+   "around": 133.12023371872058,
+   "red_center": 0.0,
+   "red_around": 0.0
+  },
+  {
+   "body": "phobos",
+   "feature": "кратер Стикни",
+   "lat": 1.0,
+   "lon_e": -49.0,
+   "expect": "crater",
+   "center": 150.1169230769231,
+   "around": 155.30322881183218,
+   "red_center": 0.0,
+   "red_around": 0.0
+  },
+  {
+   "body": "earth",
+   "feature": "Сахара",
+   "lat": 23.0,
+   "lon_e": 13.0,
+   "expect": "bright",
+   "center": 191.91015577828765,
+   "around": 189.98192404822657,
+   "red_center": 55.503562371694244,
+   "red_around": 46.45850315386846
+  },
+  {
+   "body": "earth",
+   "feature": "Тихий океан",
+   "lat": 0.0,
+   "lon_e": -150.0,
+   "expect": "dark",
+   "center": 68.66666666666667,
+   "around": 68.6839691053633,
+   "red_center": -87.0,
+   "red_around": -86.98653890590508
+  },
+  {
+   "body": "moon",
+   "feature": "Море Кризисов",
+   "lat": 17.0,
+   "lon_e": 59.099999999999994,
+   "expect": "dark",
+   "center": 74.26063679909834,
+   "around": 108.26831562611132,
+   "red_center": 0.2986354305035519,
+   "red_around": 3.9076651540552803
+  },
+  {
+   "body": "moon",
+   "feature": "кратер Тихо (лучи)",
+   "lat": -43.3,
+   "lon_e": -11.199999999999989,
+   "expect": "bright",
+   "center": 182.38521917642797,
+   "around": 175.6480171352812,
+   "red_center": -2.8845550054341516,
+   "red_around": -1.403650916170534
+  },
+  {
+   "body": "mars",
+   "feature": "Большой Сирт",
+   "lat": 8.4,
+   "lon_e": 69.5,
+   "expect": "dark",
+   "center": 56.86273799460613,
+   "around": 59.49323094117859,
+   "red_center": 28.27629513343799,
+   "red_around": 32.1614544667922
+  }
+ ]
+}

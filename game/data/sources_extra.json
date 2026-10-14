@@ -1,0 +1,30 @@
+{
+ "sources": {
+  "hipparcos": {
+   "title": "ESA 1997, The Hipparcos and Tycho Catalogues (ESA SP-1200), CDS I/239, hip_main.dat",
+   "url": "https://cdsarc.cds.unistra.fr/ftp/I/239/hip_main.dat",
+   "md5": "5775d9f9d2f257420f6647a72556a0d2",
+   "fetched_utc": "2026-10-14 13:10",
+   "license": "ESA/CDS, с указанием источника"
+  },
+  "svs_4851": {
+   "title": "NASA SVS 4851, Deep Star Maps 2020: milkyway_2020_8k.exr (Млечный Путь без ярких звёзд)",
+   "url": "https://svs.gsfc.nasa.gov/vis/a000000/a004800/a004851/milkyway_2020_8k.exr",
+   "md5": "1334cc20fecaba9a9b05d15199e1a454",
+   "fetched_utc": "2026-10-14 13:12",
+   "license": "NASA/Goddard Space Flight Center Scientific Visualization Studio. Gaia DR2: ESA/Gaia/DPAC"
+  },
+  "ballesteros2012": {
+   "title": "Ballesteros F. J. 2012, New insights into black bodies, EPL 97, 34008 (температура звезды по B−V)",
+   "doi": "10.1209/0295-5075/97/34008"
+  },
+  "codata2018_g": {
+   "title": "CODATA 2018 (NIST): гравитационная постоянная G = 6,67430·10⁻¹¹ м³/(кг·с²) (масса = GM / G)",
+   "url": "https://physics.nist.gov/cgi-bin/cuu/Value?bg"
+  },
+  "si_constants": {
+   "title": "SI (2019): c = 299 792 458 м/с, c₂ = hc/k = 1,438776877·10⁻² м·К — точные значения",
+   "url": "https://www.bipm.org/en/publications/si-brochure"
+  }
+ }
+}
